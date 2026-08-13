@@ -1,0 +1,291 @@
+{
+  "id": "mfeDecide",
+  "name": "mfeDecide",
+  "metaData": {
+    "name": "mfeDecide",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "@yadinstore/source"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.mjs",
+      "path": "",
+      "type": "module"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "mfeDecide",
+    "pluginVersion": "2.5.0",
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "id": "mfeDecide:@angular/common/http",
+      "name": "@angular/common/http",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "418.43c3d9da404c59c1.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/common",
+      "name": "@angular/common",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "600.447e7b43dbc5f9d6.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/core/primitives/di",
+      "name": "@angular/core/primitives/di",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.310a1c5da52652a6.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/core/primitives/signals",
+      "name": "@angular/core/primitives/signals",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.310a1c5da52652a6.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/core/rxjs-interop",
+      "name": "@angular/core/rxjs-interop",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.310a1c5da52652a6.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/core",
+      "name": "@angular/core",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "376.d7f543af604a5e1d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/platform-browser",
+      "name": "@angular/platform-browser",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "130.6de95a31e67cb9b3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@angular/router",
+      "name": "@angular/router",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "20.7c46c6a3e05d53bd.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@yadinstore/sharedCatalog",
+      "name": "@yadinstore/sharedCatalog",
+      "version": "0.0.0",
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "348.61ff85afd8ce5ca7.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@yadinstore/sharedEvents",
+      "name": "@yadinstore/sharedEvents",
+      "version": "0.0.0",
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "22.e65d37b59cfc8004.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:rxjs/operators",
+      "name": "rxjs/operators",
+      "version": "7.8.2",
+      "singleton": true,
+      "requiredVersion": "~7.8.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "217.632436df17654547.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:rxjs",
+      "name": "rxjs",
+      "version": "7.8.2",
+      "singleton": true,
+      "requiredVersion": "~7.8.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "296.eeb375167dfa418e.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "mfeDecide:Routes",
+      "name": "Routes",
+      "assets": {
+        "js": {
+          "sync": [
+            "__federation_expose_Routes.75489a025e087655.js"
+          ],
+          "async": [
+            "970.32a4603289cdb56c.js",
+            "901.d69c171b5cdea58e.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "./Routes"
+    }
+  ]
+}

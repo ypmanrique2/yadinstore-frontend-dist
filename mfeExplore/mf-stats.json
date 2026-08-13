@@ -1,0 +1,325 @@
+{
+  "id": "mfeExplore",
+  "name": "mfeExplore",
+  "metaData": {
+    "name": "mfeExplore",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "@yadinstore/source"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.mjs",
+      "path": "",
+      "type": "module"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "mfeExplore",
+    "pluginVersion": "2.5.0",
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/common/http",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/common/http",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "418.f9f852947d53789a.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/common",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/common",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "600.d6fd94fb95cf38d2.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/core/primitives/di",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/core/primitives/di",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.48912f998e6ab2f6.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/core/primitives/signals",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/core/primitives/signals",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.48912f998e6ab2f6.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/core",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/core",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "5.51db1f054468e363.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/platform-browser",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/platform-browser",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "130.adc0eedb2aaca253.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/router",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/router",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "20.77b08e95c7c6f096.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "shareScope": "default",
+      "eager": false,
+      "name": "@yadinstore/sharedCatalog",
+      "version": "0.0.0",
+      "id": "mfeExplore:@yadinstore/sharedCatalog",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "348.a2b7c4d86a155b94.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "shareScope": "default",
+      "eager": false,
+      "name": "@yadinstore/sharedEvents",
+      "version": "0.0.0",
+      "id": "mfeExplore:@yadinstore/sharedEvents",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "22.37d7389463f5876e.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~7.8.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "rxjs/operators",
+      "version": "7.8.2",
+      "eager": false,
+      "id": "mfeExplore:rxjs/operators",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "217.beb1e6b1b9a114fb.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~7.8.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "rxjs",
+      "version": "7.8.2",
+      "eager": false,
+      "id": "mfeExplore:rxjs",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "296.258e1788b4788110.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./Routes",
+      "id": "mfeExplore:Routes",
+      "name": "Routes",
+      "requires": [],
+      "file": "apps\\mfe-explore\\src\\app\\remote-entry\\entry.routes.ts",
+      "assets": {
+        "js": {
+          "sync": [
+            "__federation_expose_Routes.cf5d8506a4faa9c7.js"
+          ],
+          "async": [
+            "901.9d16717e3d6d2bca.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    }
+  ]
+}

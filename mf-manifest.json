@@ -1,0 +1,329 @@
+{
+  "id": "shell",
+  "name": "shell",
+  "metaData": {
+    "name": "shell",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "@yadinstore/source"
+    },
+    "remoteEntry": {
+      "name": "",
+      "path": "",
+      "type": "module"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "shell",
+    "pluginVersion": "2.5.0",
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "id": "shell:@angular/common/http",
+      "name": "@angular/common/http",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "418.b706e9187cb780bd.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/common",
+      "name": "@angular/common",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "600.1251c6a68c004c2e.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/core/primitives/di",
+      "name": "@angular/core/primitives/di",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.94971df5d721fae3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/core/primitives/signals",
+      "name": "@angular/core/primitives/signals",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.94971df5d721fae3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/core",
+      "name": "@angular/core",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "5.d218bb11d450cca3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/forms",
+      "name": "@angular/forms",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "207.aeb718d5088a43ef.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/platform-browser",
+      "name": "@angular/platform-browser",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "130.2add4c855a1ba174.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@angular/router",
+      "name": "@angular/router",
+      "version": "21.2.14",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "20.197173e2542a4675.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@yadinstore/sharedCatalog",
+      "name": "@yadinstore/sharedCatalog",
+      "version": "0.0.0",
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "348.2f7178518a3f5243.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@yadinstore/sharedEvents",
+      "name": "@yadinstore/sharedEvents",
+      "version": "0.0.0",
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "22.265a884c3472b3ec.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:@yadinstore/sharedValidation",
+      "name": "@yadinstore/sharedValidation",
+      "version": "0.0.0",
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "146.82f46a4a5b14eafc.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:rxjs/operators",
+      "name": "rxjs/operators",
+      "version": "7.8.2",
+      "singleton": true,
+      "requiredVersion": "~7.8.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "217.6587905209994969.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:rxjs",
+      "name": "rxjs",
+      "version": "7.8.2",
+      "singleton": true,
+      "requiredVersion": "~7.8.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "296.d8f498d3ab08d9f8.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "shell:zod",
+      "name": "zod",
+      "version": "4.4.3",
+      "singleton": true,
+      "requiredVersion": "4.4.3",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "605.a13518696743511b.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    }
+  ],
+  "remotes": [
+    {
+      "federationContainerName": "./mfeExplore/remoteEntry.mjs",
+      "moduleName": "Routes",
+      "alias": "mfeExplore",
+      "entry": "*"
+    },
+    {
+      "federationContainerName": "./mfeDecide/remoteEntry.mjs",
+      "moduleName": "Routes",
+      "alias": "mfeDecide",
+      "entry": "*"
+    },
+    {
+      "federationContainerName": "./mfeCheckout/remoteEntry.mjs",
+      "moduleName": "Routes",
+      "alias": "mfeCheckout",
+      "entry": "*"
+    }
+  ],
+  "exposes": []
+}
