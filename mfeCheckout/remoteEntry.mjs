@@ -5692,7 +5692,7 @@ if (!__webpack_require__.federation.instance) {
 
 var moduleMap = {
 	"./Routes": () => {
-		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(653), __webpack_require__.e(194), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(2754)))));
+		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(653), __webpack_require__.e(277), __webpack_require__.e(194), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(2754)))));
 	}
 };
 var get = (module, getScope) => {
@@ -5914,7 +5914,7 @@ function _asyncToGenerator(n) {
 /******/ 	if(!__webpack_require__.federation){
 /******/ 		__webpack_require__.federation = {
 /******/ 			initOptions: {"name":"mfeCheckout","remotes":[],"shareStrategy":"version-first"},
-/******/ 			chunkMatcher: function(chunkId) {return !/^(65[39]|219|424|811|980)$/.test(chunkId)},
+/******/ 			chunkMatcher: function(chunkId) {return !/^(65[39]|219|277|424|811|980)$/.test(chunkId)},
 /******/ 			rootOutputDir: "",
 /******/ 			bundlerRuntimeOptions: { remotes: { remoteInfos: {}, webpackRequire: __webpack_require__,idToRemoteMap: {}, chunkMapping: {},idToExternalAndNameMapping: {} } }
 /******/ 		};
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"5":"85abe7f266822c05","20":"996a55a58bd54ab3","22":"234e2f95bd09f187","51":"6eb7b711f6fd9670","76":"c2f344117aeb3485","130":"632465f5fe574a82","194":"373ba51947a8ec6c","207":"ab26034b345fa75f","217":"eb11fe2e8a18cd4d","286":"ac43a851d958db48","296":"880072c940569fdf","348":"c76c881b48d74530","418":"c75d33abc82c6894","600":"735bcc5ad3b8b0fa","901":"b41382ba376c16a6"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"5":"85abe7f266822c05","20":"996a55a58bd54ab3","22":"234e2f95bd09f187","51":"6eb7b711f6fd9670","76":"c2f344117aeb3485","130":"632465f5fe574a82","194":"2a7c3cf7550233dd","207":"ab26034b345fa75f","217":"eb11fe2e8a18cd4d","286":"ac43a851d958db48","296":"880072c940569fdf","348":"1ea83720cb9779d6","418":"c75d33abc82c6894","600":"735bcc5ad3b8b0fa","901":"b41382ba376c16a6"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -6089,7 +6089,7 @@ function _asyncToGenerator(n) {
 /******/ 				register("@angular/platform-browser", "21.2.14", () => (Promise.all([__webpack_require__.e(219), __webpack_require__.e(653), __webpack_require__.e(811), __webpack_require__.e(130)]).then(() => (() => (__webpack_require__(1130))))));
 /******/ 				register("@angular/router", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(219), __webpack_require__.e(653), __webpack_require__.e(659), __webpack_require__.e(20)]).then(() => (() => (__webpack_require__(2020))))));
 /******/ 				register("@emailjs/browser", "4.4.1", () => (__webpack_require__.e(51).then(() => (() => (__webpack_require__(51))))));
-/******/ 				register("@yadinstore/sharedCatalog", "0.0.0", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))));
+/******/ 				register("@yadinstore/sharedCatalog", "0.0.0", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(277), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))));
 /******/ 				register("@yadinstore/sharedEvents", "0.0.0", () => (__webpack_require__.e(22).then(() => (() => (__webpack_require__(1022))))));
 /******/ 				register("rxjs/operators", "7.8.2", () => (Promise.all([__webpack_require__.e(901), __webpack_require__.e(217)]).then(() => (() => (__webpack_require__(4217))))));
 /******/ 				register("rxjs", "7.8.2", () => (Promise.all([__webpack_require__.e(901), __webpack_require__.e(296)]).then(() => (() => (__webpack_require__(4296))))));
@@ -6162,7 +6162,7 @@ function _asyncToGenerator(n) {
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"^4.4.0","strictVersion":true,"singleton":true,"layer":null},
 /******/ 		},],	"@yadinstore/sharedCatalog": [{	version: "0.0.0",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(277), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":false,"singleton":false,"layer":null},
 /******/ 		},],	"@yadinstore/sharedEvents": [{	version: "0.0.0",
@@ -6273,7 +6273,7 @@ function _asyncToGenerator(n) {
 /******/ 	
 /******/ 		},
 /******/ 		2721: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(277), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: false,
 /******/ 			requiredVersion: false,
@@ -6358,12 +6358,14 @@ function _asyncToGenerator(n) {
 /******/ 			9349
 /******/ 		],
 /******/ 		"194": [
-/******/ 			3277,
 /******/ 			4924,
 /******/ 			1100
 /******/ 		],
 /******/ 		"219": [
 /******/ 			4219
+/******/ 		],
+/******/ 		"277": [
+/******/ 			3277
 /******/ 		],
 /******/ 		"286": [
 /******/ 			4219,
@@ -6436,7 +6438,7 @@ function _asyncToGenerator(n) {
 /******/ 				if(installedChunkData) {
 /******/ 					promises.push(installedChunkData[2]);
 /******/ 				} else {
-/******/ 					if(!/^(65[39]|219|424|811|980)$/.test(chunkId)) {
+/******/ 					if(!/^(65[39]|219|277|424|811|980)$/.test(chunkId)) {
 /******/ 						// setup Promise in chunk cache
 /******/ 						var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 						promises.push(installedChunkData[2] = promise);

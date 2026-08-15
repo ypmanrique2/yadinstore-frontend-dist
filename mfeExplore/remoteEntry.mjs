@@ -5794,11 +5794,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 3473
+/***/ 4290
 () {
 
 
-// UNUSED EXPORTS: ContainerPlugin_exports
+// UNUSED EXPORTS: ContainerReferencePlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -5821,15 +5821,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerReferencePlugin.js
 
 
-//#region src/types/plugins/ContainerPlugin.ts
-var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerReferencePlugin.ts
+var ContainerReferencePlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ContainerPlugin.js.map
+//# sourceMappingURL=ContainerReferencePlugin.js.map
 
 /***/ },
 
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"5":"51db1f054468e363","20":"77b08e95c7c6f096","22":"37d7389463f5876e","76":"48912f998e6ab2f6","130":"adc0eedb2aaca253","217":"beb1e6b1b9a114fb","286":"cf5d8506a4faa9c7","296":"258e1788b4788110","348":"6508e1c37771e9c5","418":"f9f852947d53789a","600":"d6fd94fb95cf38d2","901":"9d16717e3d6d2bca"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"5":"51db1f054468e363","20":"77b08e95c7c6f096","22":"37d7389463f5876e","76":"17495283de0d85d2","130":"adc0eedb2aaca253","217":"beb1e6b1b9a114fb","286":"cf5d8506a4faa9c7","296":"258e1788b4788110","348":"9246e9fa73c1650d","418":"f9f852947d53789a","600":"d6fd94fb95cf38d2","901":"9d16717e3d6d2bca"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -6092,7 +6092,7 @@ function _asyncToGenerator(n) {
 /******/ 				register("@angular/core", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(76), __webpack_require__.e(5)]).then(() => (() => (__webpack_require__(8005))))));
 /******/ 				register("@angular/platform-browser", "21.2.14", () => (Promise.all([__webpack_require__.e(219), __webpack_require__.e(653), __webpack_require__.e(811), __webpack_require__.e(130)]).then(() => (() => (__webpack_require__(1130))))));
 /******/ 				register("@angular/router", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(980), __webpack_require__.e(653), __webpack_require__.e(659), __webpack_require__.e(20)]).then(() => (() => (__webpack_require__(2020))))));
-/******/ 				register("@yadinstore/sharedCatalog", "0.0.0", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))));
+/******/ 				register("@yadinstore/sharedCatalog", "0.0.0", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(277), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))));
 /******/ 				register("@yadinstore/sharedEvents", "0.0.0", () => (__webpack_require__.e(22).then(() => (() => (__webpack_require__(1022))))));
 /******/ 				register("rxjs/operators", "7.8.2", () => (Promise.all([__webpack_require__.e(901), __webpack_require__.e(217)]).then(() => (() => (__webpack_require__(4217))))));
 /******/ 				register("rxjs", "7.8.2", () => (Promise.all([__webpack_require__.e(901), __webpack_require__.e(296)]).then(() => (() => (__webpack_require__(4296))))));
@@ -6157,7 +6157,7 @@ function _asyncToGenerator(n) {
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
 /******/ 		},],	"@yadinstore/sharedCatalog": [{	version: "0.0.0",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(219), __webpack_require__.e(277), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":false,"singleton":false,"layer":null},
 /******/ 		},],	"@yadinstore/sharedEvents": [{	version: "0.0.0",
@@ -6246,7 +6246,7 @@ function _asyncToGenerator(n) {
 /******/ 	
 /******/ 		},
 /******/ 		2721: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(277), __webpack_require__.e(811), __webpack_require__.e(348)]).then(() => (() => (__webpack_require__(9348))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: false,
 /******/ 			requiredVersion: false,

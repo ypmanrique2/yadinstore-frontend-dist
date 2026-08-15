@@ -74,7 +74,7 @@
         "js": {
           "async": [],
           "sync": [
-            "common.310a1c5da52652a6.js"
+            "common.1a2d702477e46a48.js"
           ]
         },
         "css": {
@@ -94,7 +94,7 @@
         "js": {
           "async": [],
           "sync": [
-            "common.310a1c5da52652a6.js"
+            "common.1a2d702477e46a48.js"
           ]
         },
         "css": {
@@ -114,7 +114,7 @@
         "js": {
           "async": [],
           "sync": [
-            "common.310a1c5da52652a6.js"
+            "common.1a2d702477e46a48.js"
           ]
         },
         "css": {
@@ -194,7 +194,7 @@
         "js": {
           "async": [],
           "sync": [
-            "348.09f27f259765bba5.js"
+            "348.ddd646af6d8fae87.js"
           ]
         },
         "css": {
@@ -215,6 +215,26 @@
           "async": [],
           "sync": [
             "22.e65d37b59cfc8004.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "mfeDecide:@yadinstore/tsDesignSystem",
+      "name": "@yadinstore/tsDesignSystem",
+      "version": "0.0.0",
+      "singleton": true,
+      "requiredVersion": "^0.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.1a2d702477e46a48.js"
           ]
         },
         "css": {
@@ -273,7 +293,7 @@
       "assets": {
         "js": {
           "sync": [
-            "__federation_expose_Routes.75489a025e087655.js"
+            "__federation_expose_Routes.9cf4a9f0961de959.js"
           ],
           "async": [
             "970.32a4603289cdb56c.js",
