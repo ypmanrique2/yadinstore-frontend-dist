@@ -214,7 +214,7 @@
         "js": {
           "async": [],
           "sync": [
-            "348.1ea83720cb9779d6.js"
+            "348.0a3fec447deb51ef.js"
           ]
         },
         "css": {
@@ -293,7 +293,7 @@
       "assets": {
         "js": {
           "sync": [
-            "194.2a7c3cf7550233dd.js",
+            "194.8136a918653a57bd.js",
             "__federation_expose_Routes.ac43a851d958db48.js"
           ],
           "async": [
