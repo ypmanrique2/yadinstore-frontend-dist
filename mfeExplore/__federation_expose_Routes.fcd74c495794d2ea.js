@@ -1,0 +1,1 @@
+(self.webpackChunkmfeExplore=self.webpackChunkmfeExplore||[]).push([[224,286,483],{8483(s,t,o){o.r(t),o.d(t,{remoteRoutes:()=>a});var p=o(8871),n=o(4658),e=o(1342),_=o(1474);const a=[{path:"",component:p.b,children:[{path:"",component:n.u,pathMatch:"full"},{path:"products",component:e.V},{path:"products/:category",component:e.V},{path:"stores",component:_.X}]}]}}]);
