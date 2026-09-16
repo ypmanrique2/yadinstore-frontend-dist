@@ -1,1 +1,0 @@
-(self.webpackChunkmfeCheckout=self.webpackChunkmfeCheckout||[]).push([[82],{1082(p,e,t){t.d(e,{remoteRoutes:()=>c});var _=t(2195),a=t(4896),o=t(9659);const c=[{path:"",redirectTo:"cart",pathMatch:"full"},{path:"cart",component:_.T},{path:"checkout",component:a.n},{path:"thanks",component:o.M}]}}]);
