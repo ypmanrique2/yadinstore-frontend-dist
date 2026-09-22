@@ -5692,7 +5692,7 @@ if (!__webpack_require__.federation.instance) {
 
 var moduleMap = {
 	"./Routes": () => {
-		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(840), __webpack_require__.e(277), __webpack_require__.e(848), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(1082)))));
+		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(840), __webpack_require__.e(277), __webpack_require__.e(993), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(1082)))));
 	}
 };
 var get = (module, getScope) => {
@@ -5794,11 +5794,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 5248
+/***/ 1531
 () {
 
 
-// UNUSED EXPORTS: ContainerReferencePlugin_exports
+// UNUSED EXPORTS: ContainerPlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -5821,15 +5821,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerReferencePlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
 
 
-//#region src/types/plugins/ContainerReferencePlugin.ts
-var ContainerReferencePlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerPlugin.ts
+var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ContainerReferencePlugin.js.map
+//# sourceMappingURL=ContainerPlugin.js.map
 
 /***/ },
 
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"65cfab196abbb810","160":"1643fe2a28ca87c9","222":"6ae5a988ab708a75","273":"980905bf1e6ea3a1","286":"c5c62edce458b7df","329":"6ae9e46115796922","409":"32e93b1836915722","413":"13a5192936a13985","423":"f8a06d54fba06389","500":"e286514e6e0a6a20","501":"85e3190f7ef71560","515":"23d3d4882a453055","725":"49d373cb313869a4","848":"96c646e3fa0e34c1","915":"eb795f358a3e695e"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"65cfab196abbb810","160":"1643fe2a28ca87c9","222":"6ae5a988ab708a75","273":"980905bf1e6ea3a1","286":"bd25c73818f54fde","329":"6ae9e46115796922","409":"32e93b1836915722","413":"13a5192936a13985","423":"f8a06d54fba06389","500":"d9c859969fbf08bb","501":"85e3190f7ef71560","515":"23d3d4882a453055","725":"49d373cb313869a4","915":"eb795f358a3e695e","993":"b0fb6662a9d7156e"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -6381,12 +6381,12 @@ function _asyncToGenerator(n) {
 /******/ 		"840": [
 /******/ 			8840
 /******/ 		],
-/******/ 		"848": [
-/******/ 			6114,
-/******/ 			1100
-/******/ 		],
 /******/ 		"980": [
 /******/ 			7980
+/******/ 		],
+/******/ 		"993": [
+/******/ 			6114,
+/******/ 			1100
 /******/ 		]
 /******/ 	};
 /******/ 	__webpack_require__.f.consumes = (chunkId, promises) => {

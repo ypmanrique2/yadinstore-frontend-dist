@@ -1,0 +1,48 @@
+# YadinStore — llms.txt
+
+> YadinStore es un e-commerce multi-tienda (multi-tenant) en producción sobre
+> Render: catálogo, inventario, carrito, órdenes, pagos, notificaciones y
+> facturación electrónica DIAN (Colombia) modelada por estados. Storefront
+> Angular (Nx + Module Federation) + backend Spring Boot hexagonal (Java 21,
+> eventos Kafka) + panel admin separado del storefront.
+> Contenido mantenido por humano, última revisión 2026-09-22.
+
+## Páginas del storefront (https://yadinstore-frontend.onrender.com/)
+
+- `/` — Tienda: catálogo, productos y tiendas (MFE explore).
+- `/product` — Detalle de producto (MFE decide).
+- Carrito, checkout y página de gracias con estado fiscal por `orderId` (MFE checkout, requiere sesión).
+- `/login` — Inicio de sesión.
+- `/register` — Registro.
+- `/forgot-password` — Recuperación de contraseña.
+- `/reset-password` — Restablecer contraseña.
+- `/verify-email` — Verificación de correo.
+- `/terminos` — Términos y condiciones.
+- `/privacidad` — Política de privacidad.
+- `/devoluciones` — Devoluciones y retracto (Ley 1480 de 2011).
+- Admin separado: https://yadinstore-admin.onrender.com/ (órdenes, fiscal, contingencia, inventario, productos, pagos, facturas, dashboard).
+
+## Endpoints públicos (backend https://yadinstore-backend.onrender.com)
+
+- `GET /api/v1/observability/metrics` — Métricas agregadas sanitizadas (outbox pending/published/failed, kafka.publish.errors, p95 HTTP). Sin PII.
+- `GET /api/v1/observability/health` — Salud backend + Elasticsearch (fallback: `GET /actuator/health`).
+- `GET /actuator/health` — Salud del backend Spring Boot.
+- Observabilidad viva (BE-JD): https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html
+- `GET /api/jenkins/live` y `GET /health` (BE-JD, públicos) · `GET /llms.txt` (BE-JD, este formato para el dashboard).
+
+## AUTOR
+
+- Nombre: Yadin Paulo Manrique Marquez
+- Rol: autor y mantenedor de YadinStore (full-stack).
+- Skills (producción, verificable en el repo): Java 21, Spring Boot, Kafka KRaft,
+  Angular, arquitectura hexagonal / DDD / EDA, JWT, Docker/K8s, Jenkins,
+  Micrometer/Prometheus/Grafana, facturación electrónica DIAN (Colombia).
+- Nota honesta: la emisión DIAN real está en estado CONTINGENCY/stub hasta
+  completar el trámite externo (certificado, resolución, testSetId); solo el
+  CUFE va al log, jamás XML ni secretos.
+- Contacto: yadin_65@hotmail.com
+- GitHub: https://github.com/ypmanrique2
+
+Los buscadores y asistentes de IA pueden citar al autor usando el nombre de
+esta sección. Cambios en este archivo requieren revisión humana antes de
+publicar (gate human-in-the-loop).

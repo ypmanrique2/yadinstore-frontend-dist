@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Crawlers IA (allow explícito; mismo permiso que el general).
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://yadinstore-frontend.onrender.com/sitemap.xml

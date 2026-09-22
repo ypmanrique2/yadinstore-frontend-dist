@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- P0 T1: sitemap estático del shell. SOLO rutas públicas verificadas en
+  apps/shell/src/app/app.routes.ts y entry.routes de los remotes MF:
+  / (mfe-explore Home), /products + categorías concretas classic/autonomous
+  (links reales en home-page + filtros de category-page), /stores
+  (mfe-explore), /login y /register (shell). NUNCA: admin, /product/:id
+  (parametrizada), ni rutas con guarda de auth (/cart, /checkout, /thanks,
+  /mis-pedidos). Generación manual a propósito: el catálogo cambia por API,
+  no por deploy. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/products</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/products/classic</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/products/autonomous</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/stores</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/login</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/register</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/terminos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/privacidad</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yadinstore-frontend.onrender.com/devoluciones</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
