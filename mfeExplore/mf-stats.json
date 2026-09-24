@@ -87,7 +87,7 @@
         "js": {
           "async": [],
           "sync": [
-            "common.fcad07009529ab02.js"
+            "common.407cd36beb9308d4.js"
           ]
         },
         "css": {
@@ -112,7 +112,32 @@
         "js": {
           "async": [],
           "sync": [
-            "common.fcad07009529ab02.js"
+            "common.407cd36beb9308d4.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/core/rxjs-interop",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/core/rxjs-interop",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.407cd36beb9308d4.js"
           ]
         },
         "css": {
@@ -137,7 +162,32 @@
         "js": {
           "async": [],
           "sync": [
-            "515.e4ce25310f3821c1.js"
+            "231.8f3c0111842282bd.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "@angular/forms",
+      "version": "21.2.14",
+      "eager": false,
+      "id": "mfeExplore:@angular/forms",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "725.ba7a6bffde640bc8.js"
           ]
         },
         "css": {
@@ -211,7 +261,7 @@
         "js": {
           "async": [],
           "sync": [
-            "500.c4eaa579e67d5ef4.js"
+            "500.6d1b5ce06c88cbf2.js"
           ]
         },
         "css": {
@@ -309,9 +359,11 @@
       "assets": {
         "js": {
           "sync": [
-            "__federation_expose_Routes.fcd74c495794d2ea.js"
+            "829.bd61c59faf66bad7.js",
+            "__federation_expose_Routes.0db4cf47c91e3ea5.js"
           ],
           "async": [
+            "749.9e1c2d80a29bc9d1.js",
             "409.155f11f9581c03d4.js"
           ]
         },

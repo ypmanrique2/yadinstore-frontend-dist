@@ -36,7 +36,8 @@
 - Rol: autor y mantenedor de YadinStore (full-stack).
 - Skills (producción, verificable en el repo): Java 21, Spring Boot, Kafka KRaft,
   Angular, arquitectura hexagonal / DDD / EDA, JWT, Docker/K8s, Jenkins,
-  Micrometer/Prometheus/Grafana, facturación electrónica DIAN (Colombia).
+  Micrometer/Prometheus/Grafana, facturación electrónica DIAN (Colombia),
+   SEO Core (AI First, human-in-the-loop, SEO organic).
 - Nota honesta: la emisión DIAN real está en estado CONTINGENCY/stub hasta
   completar el trámite externo (certificado, resolución, testSetId); solo el
   CUFE va al log, jamás XML ni secretos.
