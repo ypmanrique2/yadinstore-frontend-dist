@@ -5794,11 +5794,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 9163
+/***/ 1531
 () {
 
 
-// UNUSED EXPORTS: ModuleFederationPlugin_exports
+// UNUSED EXPORTS: ContainerPlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -5821,15 +5821,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ModuleFederationPlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
 
 
-//#region src/types/plugins/ModuleFederationPlugin.ts
-var ModuleFederationPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerPlugin.ts
+var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ModuleFederationPlugin.js.map
+//# sourceMappingURL=ContainerPlugin.js.map
 
 /***/ },
 
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"037b8286adc0ea37","160":"6caf99c8be6ebd0f","161":"d86132b24ee6e586","222":"cd5d937bdd8baa5a","231":"6adb82ee99a9f70b","270":"5b08c4ea337d11fc","273":"14974d2431f08c5e","286":"9d72b17c51bc4b11","329":"4d7bc8dd1959c43e","409":"a7417999adc940f0","413":"b8f0e10abed1c3d6","423":"12a9d3b1378d2981","500":"2772ee69846060e9","501":"6b4af3fab67217d2","749":"7c213098139c7417"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"037b8286adc0ea37","160":"6caf99c8be6ebd0f","161":"d86132b24ee6e586","222":"cd5d937bdd8baa5a","231":"6adb82ee99a9f70b","270":"5b08c4ea337d11fc","273":"14974d2431f08c5e","286":"9d72b17c51bc4b11","329":"4d7bc8dd1959c43e","409":"a7417999adc940f0","413":"b8f0e10abed1c3d6","423":"12a9d3b1378d2981","500":"52794e6976b86a45","501":"6b4af3fab67217d2","749":"7c213098139c7417"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 

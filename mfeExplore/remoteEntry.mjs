@@ -5794,11 +5794,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 5248
+/***/ 1531
 () {
 
 
-// UNUSED EXPORTS: ContainerReferencePlugin_exports
+// UNUSED EXPORTS: ContainerPlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -5821,15 +5821,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerReferencePlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
 
 
-//#region src/types/plugins/ContainerReferencePlugin.ts
-var ContainerReferencePlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerPlugin.ts
+var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ContainerReferencePlugin.js.map
+//# sourceMappingURL=ContainerPlugin.js.map
 
 /***/ },
 
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"407cd36beb9308d4","160":"b95912cf30dffc4f","161":"c918e415c0b82fb7","222":"481a8bb31271b755","231":"8f3c0111842282bd","270":"b643c675a58b1eb2","273":"5e148d8828484c4d","286":"3a23837ecc9bcb46","329":"943fa9ea944ebf49","409":"155f11f9581c03d4","413":"c40fe0f503d8d549","423":"c384b61abf2fbac9","500":"1871b7f5cc916c34","501":"83ca2b668e330b3e","725":"ba7a6bffde640bc8","749":"9e1c2d80a29bc9d1","777":"242f24f4f30b9c12"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"407cd36beb9308d4","160":"b95912cf30dffc4f","161":"c918e415c0b82fb7","222":"481a8bb31271b755","231":"8f3c0111842282bd","270":"b643c675a58b1eb2","273":"5e148d8828484c4d","286":"3a23837ecc9bcb46","329":"943fa9ea944ebf49","409":"155f11f9581c03d4","413":"c40fe0f503d8d549","423":"c384b61abf2fbac9","500":"f536ea3cfb3f6269","501":"83ca2b668e330b3e","725":"ba7a6bffde640bc8","749":"9e1c2d80a29bc9d1","777":"651fe5087db06412"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -6233,17 +6233,6 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@yadinstore/sharedEvents",
 /******/ 	
 /******/ 		},
-/******/ 		6704: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(6849))))),
-/******/ 			shareScope: ["default"],
-/******/ 			singleton: true,
-/******/ 			requiredVersion: "~21.2.0",
-/******/ 			strictVersion: true,
-/******/ 			eager: false,
-/******/ 			layer: undefined,
-/******/ 			shareKey: "@angular/core/rxjs-interop",
-/******/ 	
-/******/ 		},
 /******/ 		6114: {
 /******/ 			fallback: () => (Promise.all([__webpack_require__.e(980), __webpack_require__.e(840), __webpack_require__.e(725)]).then(() => (() => (__webpack_require__(8725))))),
 /******/ 			shareScope: ["default"],
@@ -6253,6 +6242,17 @@ function _asyncToGenerator(n) {
 /******/ 			eager: false,
 /******/ 			layer: undefined,
 /******/ 			shareKey: "@angular/forms",
+/******/ 	
+/******/ 		},
+/******/ 		6704: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(6849))))),
+/******/ 			shareScope: ["default"],
+/******/ 			singleton: true,
+/******/ 			requiredVersion: "~21.2.0",
+/******/ 			strictVersion: true,
+/******/ 			eager: false,
+/******/ 			layer: undefined,
+/******/ 			shareKey: "@angular/core/rxjs-interop",
 /******/ 	
 /******/ 		},
 /******/ 		5687: {
@@ -6383,8 +6383,8 @@ function _asyncToGenerator(n) {
 /******/ 			8900
 /******/ 		],
 /******/ 		"777": [
-/******/ 			6704,
-/******/ 			6114
+/******/ 			6114,
+/******/ 			6704
 /******/ 		],
 /******/ 		"840": [
 /******/ 			8840
