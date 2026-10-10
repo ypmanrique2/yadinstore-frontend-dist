@@ -5794,11 +5794,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 5248
+/***/ 1531
 () {
 
 
-// UNUSED EXPORTS: ContainerReferencePlugin_exports
+// UNUSED EXPORTS: ContainerPlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -5821,15 +5821,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerReferencePlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
 
 
-//#region src/types/plugins/ContainerReferencePlugin.ts
-var ContainerReferencePlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerPlugin.ts
+var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ContainerReferencePlugin.js.map
+//# sourceMappingURL=ContainerPlugin.js.map
 
 /***/ },
 
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"407cd36beb9308d4","160":"b95912cf30dffc4f","161":"c918e415c0b82fb7","222":"110709f2d17814e8","231":"8f3c0111842282bd","270":"b643c675a58b1eb2","273":"5e148d8828484c4d","286":"0db4cf47c91e3ea5","329":"943fa9ea944ebf49","409":"155f11f9581c03d4","413":"c40fe0f503d8d549","423":"c384b61abf2fbac9","500":"6d1b5ce06c88cbf2","501":"83ca2b668e330b3e","725":"ba7a6bffde640bc8","749":"9e1c2d80a29bc9d1","829":"bd61c59faf66bad7"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"407cd36beb9308d4","160":"b95912cf30dffc4f","161":"c918e415c0b82fb7","222":"110709f2d17814e8","231":"8f3c0111842282bd","270":"b643c675a58b1eb2","273":"5e148d8828484c4d","286":"0db4cf47c91e3ea5","329":"943fa9ea944ebf49","409":"155f11f9581c03d4","413":"c40fe0f503d8d549","423":"c384b61abf2fbac9","500":"6d1b5ce06c88cbf2","501":"83ca2b668e330b3e","725":"ba7a6bffde640bc8","749":"9e1c2d80a29bc9d1","829":"158384bf39d8b830"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
