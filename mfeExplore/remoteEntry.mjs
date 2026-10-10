@@ -5692,7 +5692,7 @@ if (!__webpack_require__.federation.instance) {
 
 var moduleMap = {
 	"./Routes": () => {
-		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(424), __webpack_require__.e(277), __webpack_require__.e(829), __webpack_require__.e(76), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(8483)))));
+		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(424), __webpack_require__.e(277), __webpack_require__.e(777), __webpack_require__.e(76), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(8483)))));
 	}
 };
 var get = (module, getScope) => {
@@ -5794,11 +5794,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 1531
+/***/ 5248
 () {
 
 
-// UNUSED EXPORTS: ContainerPlugin_exports
+// UNUSED EXPORTS: ContainerReferencePlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -5821,15 +5821,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerReferencePlugin.js
 
 
-//#region src/types/plugins/ContainerPlugin.ts
-var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerReferencePlugin.ts
+var ContainerReferencePlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ContainerPlugin.js.map
+//# sourceMappingURL=ContainerReferencePlugin.js.map
 
 /***/ },
 
@@ -5965,7 +5965,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"407cd36beb9308d4","160":"b95912cf30dffc4f","161":"c918e415c0b82fb7","222":"110709f2d17814e8","231":"8f3c0111842282bd","270":"b643c675a58b1eb2","273":"5e148d8828484c4d","286":"0db4cf47c91e3ea5","329":"943fa9ea944ebf49","409":"155f11f9581c03d4","413":"c40fe0f503d8d549","423":"c384b61abf2fbac9","500":"6d1b5ce06c88cbf2","501":"83ca2b668e330b3e","725":"ba7a6bffde640bc8","749":"9e1c2d80a29bc9d1","829":"158384bf39d8b830"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"407cd36beb9308d4","160":"b95912cf30dffc4f","161":"c918e415c0b82fb7","222":"481a8bb31271b755","231":"8f3c0111842282bd","270":"b643c675a58b1eb2","273":"5e148d8828484c4d","286":"3a23837ecc9bcb46","329":"943fa9ea944ebf49","409":"155f11f9581c03d4","413":"c40fe0f503d8d549","423":"c384b61abf2fbac9","500":"1871b7f5cc916c34","501":"83ca2b668e330b3e","725":"ba7a6bffde640bc8","749":"9e1c2d80a29bc9d1","777":"242f24f4f30b9c12"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -6382,7 +6382,7 @@ function _asyncToGenerator(n) {
 /******/ 			1990,
 /******/ 			8900
 /******/ 		],
-/******/ 		"829": [
+/******/ 		"777": [
 /******/ 			6704,
 /******/ 			6114
 /******/ 		],
