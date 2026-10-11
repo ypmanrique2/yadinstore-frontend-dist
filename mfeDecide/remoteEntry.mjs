@@ -1,14 +1,14 @@
 /******/ var __webpack_modules__ = ({
 
-/***/ 8811
+/***/ 1626
 (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 
-// NAMESPACE OBJECT: ./node_modules/.pnpm/@module-federation+runtime@_80bda8b940bad4fb35074f3c2d41639c/node_modules/@module-federation/runtime/dist/bundler.js
+// NAMESPACE OBJECT: ./node_modules/.pnpm/@module-federation+runtime@2.9.2/node_modules/@module-federation/runtime/dist/bundler.js
 var bundler_namespaceObject = {};
 __webpack_require__.r(bundler_namespaceObject);
 __webpack_require__.d(bundler_namespaceObject, {
-  Module: () => (Module$1),
+  Module: () => (Module),
   ModuleFederation: () => (ModuleFederation),
   createInstance: () => (createInstance),
   getInstance: () => (getInstance),
@@ -24,10 +24,11 @@ __webpack_require__.d(bundler_namespaceObject, {
   registerGlobalPlugins: () => (registerGlobalPlugins),
   registerPlugins: () => (dist_registerPlugins),
   registerRemotes: () => (registerRemotes),
-  registerShared: () => (registerShared)
+  registerShared: () => (registerShared),
+  satisfy: () => (satisfy)
 });
 
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/attachShareScopeMap.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/attachShareScopeMap.js
 //#region src/attachShareScopeMap.ts
 function attachShareScopeMap(webpackRequire) {
   if (!webpackRequire.S || webpackRequire.federation.hasAttachShareScopeMap || !webpackRequire.federation.instance || !webpackRequire.federation.instance.shareScopeMap) return;
@@ -38,14 +39,14 @@ function attachShareScopeMap(webpackRequire) {
 //#endregion
 
 //# sourceMappingURL=attachShareScopeMap.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/constant.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/constant.js
 //#region src/constant.ts
 const FEDERATION_SUPPORTED_TYPES = ["script"];
 
 //#endregion
 
 //# sourceMappingURL=constant.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/updateOptions.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/updateOptions.js
 //#region src/updateOptions.ts
 function updateConsumeOptions(options) {
   const {
@@ -191,7 +192,7 @@ function updateRemoteOptions(options) {
 //#endregion
 
 //# sourceMappingURL=updateOptions.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/constant.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/constant.js
 //#region src/constant.ts
 const FederationModuleManifest = "federation-manifest.json";
 const MANIFEST_EXT = ".json";
@@ -240,7 +241,7 @@ let TreeShakingStatus = /* @__PURE__ */function (TreeShakingStatus) {
 //#endregion
 
 //# sourceMappingURL=constant.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/env.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/env.js
 
 
 //#region src/env.ts
@@ -271,7 +272,7 @@ const getProcessEnv = function () {
 //#endregion
 
 //# sourceMappingURL=env.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/utils.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/utils.js
 /* unused harmony import specifier */ var utils_SEPARATOR;
 /* unused harmony import specifier */ var utils_MANIFEST_EXT;
 /* unused harmony import specifier */ var utils_NameTransformSymbol;
@@ -354,7 +355,7 @@ const generateShareFilename = (pkgName, withExt) => {
   if (!pkgName) return "";
   return encodeName(pkgName, "__federation_shared_", withExt);
 };
-const getResourceUrl = (module, sourceUrl) => {
+function getResourceUrl(module, sourceUrl) {
   if ("getPublicPath" in module) {
     let publicPath;
     if (!module.getPublicPath.startsWith("function")) publicPath = new Function(module.getPublicPath)();else publicPath = new Function("return " + module.getPublicPath)()();
@@ -366,7 +367,7 @@ const getResourceUrl = (module, sourceUrl) => {
     console.warn("Cannot get resource URL. If in debug mode, please ignore.", module, sourceUrl);
     return "";
   }
-};
+}
 const assert = (condition, msg) => {
   if (!condition) error(msg);
 };
@@ -391,7 +392,7 @@ function isRequiredVersion(str) {
 //#endregion
 
 //# sourceMappingURL=utils.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/remotes.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/remotes.js
 
 
 
@@ -470,7 +471,7 @@ function remotes(options) {
 //#endregion
 
 //# sourceMappingURL=remotes.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/getUsedExports.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/getUsedExports.js
 //#region src/getUsedExports.ts
 function getUsedExports(webpackRequire, sharedName) {
   const usedExports = webpackRequire.federation.usedExports;
@@ -481,14 +482,14 @@ function getUsedExports(webpackRequire, sharedName) {
 //#endregion
 
 //# sourceMappingURL=getUsedExports.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/error-codes/dist/error-codes.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/error-codes/dist/error-codes.js
 //#region ../error-codes/dist/error-codes.mjs
 const RUNTIME_012 = "RUNTIME-012";
 
 //#endregion
 
 //# sourceMappingURL=error-codes.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/error-codes/dist/getShortErrorMsg.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/error-codes/dist/getShortErrorMsg.js
 //#region ../error-codes/dist/getShortErrorMsg.mjs
 const getDocsUrl = errorCode => {
   return `View the docs to see how to solve: https://module-federation.io/guide/troubleshooting/${errorCode.split("-")[0].toLowerCase()}#${errorCode.toLowerCase()}`;
@@ -504,7 +505,7 @@ const getShortErrorMsg = (errorCode, errorDescMap, args, originalErrorMsg) => {
 //#endregion
 
 //# sourceMappingURL=getShortErrorMsg.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/consumes.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/consumes.js
 
 
 
@@ -565,7 +566,12 @@ function consumes(options) {
         useIn: [federationInstance.options.name]
       };
       const promise = federationInstance.loadShare(shareKey, {
-        customShareInfo
+        customShareInfo,
+        context: {
+          trigger: "build",
+          moduleId: id,
+          chunkId
+        }
       }).then(factory => {
         if (factory === false) {
           if (typeof getter !== "function") throw new Error(getShortErrorMsg(RUNTIME_012, {
@@ -587,7 +593,7 @@ function consumes(options) {
 //#endregion
 
 //# sourceMappingURL=consumes.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/initializeSharing.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/initializeSharing.js
 
 
 
@@ -658,7 +664,7 @@ function initializeSharing({
 //# sourceMappingURL=initializeSharing.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/@babel+runtime@7.29.2/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
 var asyncToGenerator = __webpack_require__(2088);
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/installInitialConsumes.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/installInitialConsumes.js
 
 
 
@@ -687,10 +693,18 @@ function handleInitialConsumes(options) {
       useIn: [federationInstance.options.name]
     };
     if (asyncLoad) return federationInstance.loadShare(shareKey, {
-      customShareInfo
+      customShareInfo,
+      context: {
+        trigger: "build",
+        moduleId
+      }
     });
     return federationInstance.loadShareSync(shareKey, {
-      customShareInfo
+      customShareInfo,
+      context: {
+        trigger: "build",
+        moduleId
+      }
     });
   } catch (err) {
     console.error("loadShareSync failed! The function should not be called unless you set \"eager:true\". If you do not set it, and encounter this issue, you can check whether an async boundary is implemented.");
@@ -750,7 +764,7 @@ function installInitialConsumes(options) {
 //#endregion
 
 //# sourceMappingURL=installInitialConsumes.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/initContainerEntry.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/initContainerEntry.js
 //#region src/initContainerEntry.ts
 function initContainerEntry(options) {
   const {
@@ -805,7 +819,7 @@ function initContainerEntry(options) {
 //#endregion
 
 //# sourceMappingURL=initContainerEntry.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/logger.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/logger.js
 
 
 //#region src/logger.ts
@@ -918,7 +932,7 @@ const infrastructureLogger = createInfrastructureLogger(PREFIX);
 //#endregion
 
 //# sourceMappingURL=logger.js.map
-;// ./node_modules/.pnpm/@module-federation+error-codes@2.5.0/node_modules/@module-federation/error-codes/dist/getShortErrorMsg.mjs
+;// ./node_modules/.pnpm/@module-federation+error-codes@2.9.2/node_modules/@module-federation/error-codes/dist/getShortErrorMsg.mjs
 //#region src/getShortErrorMsg.ts
 const getShortErrorMsg_getDocsUrl = errorCode => {
   return `View the docs to see how to solve: https://module-federation.io/guide/troubleshooting/${errorCode.split("-")[0].toLowerCase()}#${errorCode.toLowerCase()}`;
@@ -934,7 +948,7 @@ const getShortErrorMsg_getShortErrorMsg = (errorCode, errorDescMap, args, origin
 //#endregion
 
 //# sourceMappingURL=getShortErrorMsg.mjs.map
-;// ./node_modules/.pnpm/@module-federation+error-codes@2.5.0/node_modules/@module-federation/error-codes/dist/browser.mjs
+;// ./node_modules/.pnpm/@module-federation+error-codes@2.9.2/node_modules/@module-federation/error-codes/dist/browser.mjs
 
 
 //#region src/browser.ts
@@ -945,7 +959,7 @@ function logAndReport(code, descMap, args, logger, originalErrorMsg, context) {
 //#endregion
 
 //# sourceMappingURL=browser.mjs.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/logger.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/logger.js
 
 
 
@@ -976,7 +990,7 @@ function warn$1(msg) {
 //#endregion
 
 //# sourceMappingURL=logger.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/tool.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/tool.js
 /* unused harmony import specifier */ var _asyncToGenerator;
 /* unused harmony import specifier */ var tool_warn$1;
 
@@ -1054,12 +1068,13 @@ const processModuleAlias = (name, subPath) => {
 //#endregion
 
 //# sourceMappingURL=tool.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/global.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/global.js
 
 
 
 
 //#region src/global.ts
+const MAX_PRELOADED_ASSETS = 2e3;
 const CurrentGlobal = typeof globalThis === "object" ? globalThis : window;
 const nativeGlobal = (() => {
   try {
@@ -1090,7 +1105,8 @@ function setGlobalDefaultVal(target) {
       moduleInfo: {},
       __SHARE__: {},
       __MANIFEST_LOADING__: {},
-      __PRELOADED_MAP__: /* @__PURE__ */new Map()
+      __PRELOADED_MAP__: /* @__PURE__ */new Map(),
+      __PRELOADED_ASSETS__: /* @__PURE__ */new Set()
     });
     definePropertyGlobalVal(target, "__VMOK__", target.__FEDERATION__);
   }
@@ -1100,6 +1116,7 @@ function setGlobalDefaultVal(target) {
   target.__FEDERATION__.__SHARE__ ??= {};
   target.__FEDERATION__.__MANIFEST_LOADING__ ??= {};
   target.__FEDERATION__.__PRELOADED_MAP__ ??= /* @__PURE__ */new Map();
+  target.__FEDERATION__.__PRELOADED_ASSETS__ ??= /* @__PURE__ */new Set();
 }
 setGlobalDefaultVal(CurrentGlobal);
 setGlobalDefaultVal(nativeGlobal);
@@ -1109,6 +1126,7 @@ function resetFederationGlobalInfo() {
   CurrentGlobal.__FEDERATION__.moduleInfo = {};
   CurrentGlobal.__FEDERATION__.__SHARE__ = {};
   CurrentGlobal.__FEDERATION__.__MANIFEST_LOADING__ = {};
+  CurrentGlobal.__FEDERATION__.__PRELOADED_ASSETS__.clear();
   Object.keys(globalLoading).forEach(key => {
     delete globalLoading[key];
   });
@@ -1122,7 +1140,7 @@ function getGlobalFederationConstructor() {
 function setGlobalFederationConstructor(FederationConstructor, isDebug = isDebugMode()) {
   if (isDebug) {
     CurrentGlobal.__FEDERATION__.__DEBUG_CONSTRUCTOR__ = FederationConstructor;
-    CurrentGlobal.__FEDERATION__.__DEBUG_CONSTRUCTOR_VERSION__ = "2.5.0";
+    CurrentGlobal.__FEDERATION__.__DEBUG_CONSTRUCTOR_VERSION__ = "2.9.2";
   }
 }
 function getInfoWithoutType(target, key) {
@@ -1197,19 +1215,20 @@ const registerGlobalPlugins = plugins => {
 const getGlobalHostPlugins = () => nativeGlobal.__FEDERATION__.__GLOBAL_PLUGIN__;
 const getPreloaded = id => CurrentGlobal.__FEDERATION__.__PRELOADED_MAP__.get(id);
 const setPreloaded = id => CurrentGlobal.__FEDERATION__.__PRELOADED_MAP__.set(id, true);
+const getPreloadedAsset = url => CurrentGlobal.__FEDERATION__.__PRELOADED_ASSETS__.has(url);
+const setPreloadedAsset = url => {
+  const preloadedAssets = CurrentGlobal.__FEDERATION__.__PRELOADED_ASSETS__;
+  preloadedAssets.add(url);
+  if (preloadedAssets.size > MAX_PRELOADED_ASSETS) {
+    const oldestUrl = preloadedAssets.values().next().value;
+    if (oldestUrl !== void 0) preloadedAssets.delete(oldestUrl);
+  }
+};
 
 //#endregion
 
 //# sourceMappingURL=global.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/constant.js
-//#region src/constant.ts
-const DEFAULT_SCOPE = "default";
-const DEFAULT_REMOTE_TYPE = "global";
-
-//#endregion
-
-//# sourceMappingURL=constant.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/semver/constants.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/semver/constants.js
 //#region src/utils/semver/constants.ts
 const buildIdentifier = "[0-9A-Za-z-]+";
 const build = `(?:\\+(${buildIdentifier}(?:\\.${buildIdentifier})*))`;
@@ -1241,7 +1260,7 @@ const gte0 = "^\\s*>=\\s*0.0.0\\s*$";
 //#endregion
 
 //# sourceMappingURL=constants.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/semver/utils.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/semver/utils.js
 
 
 //#region src/utils/semver/utils.ts
@@ -1266,7 +1285,7 @@ function combineVersion(major, minor, patch, preRelease) {
 //#endregion
 
 //# sourceMappingURL=utils.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/semver/parser.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/semver/parser.js
 
 
 
@@ -1349,7 +1368,7 @@ function parseGTE0(comparatorString) {
 //#endregion
 
 //# sourceMappingURL=parser.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/semver/compare.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/semver/compare.js
 //#region src/utils/semver/compare.ts
 function compareAtom(rangeAtom, versionAtom) {
   rangeAtom = Number(rangeAtom) || rangeAtom;
@@ -1408,7 +1427,7 @@ function compare(rangeAtom, versionAtom) {
 //#endregion
 
 //# sourceMappingURL=compare.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/semver/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/semver/index.js
 
 
 
@@ -1477,7 +1496,15 @@ function satisfy(version, range) {
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/share.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/constant.js
+//#region src/constant.ts
+const DEFAULT_SCOPE = "default";
+const DEFAULT_REMOTE_TYPE = "global";
+
+//#endregion
+
+//# sourceMappingURL=constant.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/share.js
 
 
 
@@ -1657,7 +1684,7 @@ function getFindShareFunction(strategy) {
   if (strategy === "loaded-first") return findSingletonVersionOrderByLoaded;
   return findSingletonVersionOrderByVersion;
 }
-function getRegisteredShare(localShareScopeMap, pkgName, shareInfo, resolveShare) {
+function getRegisteredShare(localShareScopeMap, pkgName, shareInfo, resolveShare, loadContext) {
   if (!localShareScopeMap) return;
   const {
     shareConfig,
@@ -1715,7 +1742,8 @@ function getRegisteredShare(localShareScopeMap, pkgName, shareInfo, resolveShare
       version: maxOrSingletonVersion,
       GlobalFederation: Global.__FEDERATION__,
       shareInfo,
-      resolver: defaultResolver
+      resolver: defaultResolver,
+      loadContext
     };
     return (resolveShare.emit(params) || params).resolver();
   }
@@ -1769,7 +1797,7 @@ function directShare(shared, useTreesShaking) {
 //#endregion
 
 //# sourceMappingURL=share.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/dom.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/dom.js
 
 
 
@@ -1999,7 +2027,7 @@ function loadScript(url, info) {
 //#endregion
 
 //# sourceMappingURL=dom.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/node.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/node.js
 
 //#region src/node.ts
 const sdkImportCache = /* @__PURE__ */new Map();
@@ -2014,26 +2042,17 @@ function importNodeModule(name) {
   sdkImportCache.set(name, promise);
   return promise;
 }
-const loadNodeFetch = /*#__PURE__*/function () {
-  var _ref = (0,asyncToGenerator/* default */.A)(function* () {
-    const fetchModule = yield importNodeModule("node-fetch");
-    return fetchModule.default || fetchModule;
-  });
-  return function loadNodeFetch() {
-    return _ref.apply(this, arguments);
-  };
-}();
 const lazyLoaderHookFetch = /*#__PURE__*/function () {
-  var _ref2 = (0,asyncToGenerator/* default */.A)(function* (input, init, loaderHook) {
+  var _ref = (0,asyncToGenerator/* default */.A)(function* (input, init, loaderHook) {
     const hook = (url, init) => {
       return loaderHook.lifecycle.fetch.emit(url, init);
     };
     const res = yield hook(input, init || {});
-    if (!res || !(res instanceof Response)) return (typeof fetch === "undefined" ? yield loadNodeFetch() : fetch)(input, init || {});
+    if (!res || !(res instanceof Response)) return fetch(input, init || {});
     return res;
   });
   return function lazyLoaderHookFetch(_x, _x2, _x3) {
-    return _ref2.apply(this, arguments);
+    return _ref.apply(this, arguments);
   };
 }();
 const createScriptNode = typeof ENV_TARGET === "undefined" || ENV_TARGET !== "web" ? (url, cb, attrs, loaderHook) => {
@@ -2050,16 +2069,16 @@ const createScriptNode = typeof ENV_TARGET === "undefined" || ENV_TARGET !== "we
     return;
   }
   const getFetch = /*#__PURE__*/function () {
-    var _ref3 = (0,asyncToGenerator/* default */.A)(function* () {
+    var _ref2 = (0,asyncToGenerator/* default */.A)(function* () {
       if (loaderHook?.fetch) return (input, init) => lazyLoaderHookFetch(input, init, loaderHook);
-      return typeof fetch === "undefined" ? loadNodeFetch() : fetch;
+      return fetch;
     });
     return function getFetch() {
-      return _ref3.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
   const handleScriptFetch = /*#__PURE__*/function () {
-    var _ref4 = (0,asyncToGenerator/* default */.A)(function* (f, urlObj) {
+    var _ref3 = (0,asyncToGenerator/* default */.A)(function* (f, urlObj) {
       try {
         const res = yield f(urlObj.href);
         const data = yield res.text();
@@ -2090,21 +2109,21 @@ const createScriptNode = typeof ENV_TARGET === "undefined" || ENV_TARGET !== "we
       }
     });
     return function handleScriptFetch(_x4, _x5) {
-      return _ref4.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
   getFetch().then(/*#__PURE__*/function () {
-    var _ref5 = (0,asyncToGenerator/* default */.A)(function* (f) {
+    var _ref4 = (0,asyncToGenerator/* default */.A)(function* (f) {
       if (attrs?.["type"] === "esm" || attrs?.["type"] === "module") return loadModule(urlObj.href, {
         fetch: f,
         vm: yield importNodeModule("vm")
       }).then(/*#__PURE__*/function () {
-        var _ref6 = (0,asyncToGenerator/* default */.A)(function* (module) {
+        var _ref5 = (0,asyncToGenerator/* default */.A)(function* (module) {
           yield module.evaluate();
           cb(void 0, module.namespace);
         });
         return function (_x7) {
-          return _ref6.apply(this, arguments);
+          return _ref5.apply(this, arguments);
         };
       }()).catch(e => {
         cb(e instanceof Error ? e : /* @__PURE__ */new Error(`Script execution error: ${e}`));
@@ -2112,7 +2131,7 @@ const createScriptNode = typeof ENV_TARGET === "undefined" || ENV_TARGET !== "we
       handleScriptFetch(f, urlObj);
     });
     return function (_x6) {
-      return _ref5.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }()).catch(err => {
     cb(err);
@@ -2133,7 +2152,99 @@ const loadScriptNode = typeof ENV_TARGET === "undefined" || ENV_TARGET !== "web"
   throw new Error("loadScriptNode is disabled in non-Node.js environment");
 };
 const esmModuleCache = /* @__PURE__ */new Map();
-function loadModule(_x8, _x9) {
+const isFetchableRemoteModuleUrl = url => url.startsWith("http:") || url.startsWith("https:");
+const isBareModuleSpecifier = specifier => !specifier.startsWith("./") && !specifier.startsWith("../") && !specifier.startsWith("/") && !specifier.includes(":");
+function encodeRemoteModulePath(url) {
+  const remoteUrl = new URL(url);
+  const encodedProtocol = encodeURIComponent(remoteUrl.protocol.slice(0, -1));
+  const encodedHost = encodeURIComponent(remoteUrl.host);
+  const encodedPathname = remoteUrl.pathname.split("/").map(segment => encodeURIComponent(segment)).join("/");
+  const encodedSearchHash = encodeURIComponent(`${remoteUrl.search}${remoteUrl.hash}`);
+  return `/${encodedProtocol}/${encodedHost}${encodedPathname}${encodedSearchHash ? `/${encodedSearchHash}` : ""}`;
+}
+function createImportMetaUrl(url, baseFileUrl) {
+  const baseUrl = baseFileUrl.endsWith("/") ? baseFileUrl : `${baseFileUrl}/`;
+  return new URL(`__module_federation_remote__${encodeRemoteModulePath(url)}`, baseUrl).href;
+}
+function isNodeBuiltinSpecifier(_x8) {
+  return _isNodeBuiltinSpecifier.apply(this, arguments);
+}
+function _isNodeBuiltinSpecifier() {
+  _isNodeBuiltinSpecifier = (0,asyncToGenerator/* default */.A)(function* (specifier) {
+    if (specifier.startsWith("node:")) return true;
+    if (!isBareModuleSpecifier(specifier)) return false;
+    return (yield importNodeModule("node:module")).builtinModules.includes(specifier);
+  });
+  return _isNodeBuiltinSpecifier.apply(this, arguments);
+}
+function getSyntheticModuleExports(moduleExports) {
+  const namespaceObject = moduleExports && (typeof moduleExports === "object" || typeof moduleExports === "function") ? moduleExports : {
+    default: moduleExports
+  };
+  const effectiveExports = {
+    ...namespaceObject
+  };
+  if (!Object.prototype.hasOwnProperty.call(effectiveExports, "default")) effectiveExports.default = namespaceObject;
+  return effectiveExports;
+}
+function createSyntheticModuleFromExports(_x9, _x0, _x1) {
+  return _createSyntheticModuleFromExports.apply(this, arguments);
+}
+function _createSyntheticModuleFromExports() {
+  _createSyntheticModuleFromExports = (0,asyncToGenerator/* default */.A)(function* (identifier, moduleExports, vm) {
+    if (typeof vm.SyntheticModule !== "function") throw new Error("vm.SyntheticModule is required to load Node.js built-in modules in ESM remote entries.");
+    const effectiveExports = getSyntheticModuleExports(moduleExports);
+    const exportNames = Object.keys(effectiveExports);
+    const syntheticModule = new vm.SyntheticModule(exportNames, function setSyntheticModuleExports() {
+      for (const name of exportNames) this.setExport(name, effectiveExports[name]);
+    }, {
+      identifier
+    });
+    esmModuleCache.set(identifier, syntheticModule);
+    yield syntheticModule.link(/*#__PURE__*/(0,asyncToGenerator/* default */.A)(function* () {
+      throw new Error(`Node.js built-in module "${identifier}" should not request child modules.`);
+    }));
+    yield syntheticModule.evaluate();
+    return syntheticModule;
+  });
+  return _createSyntheticModuleFromExports.apply(this, arguments);
+}
+function loadNodeBuiltinModule(_x10, _x11) {
+  return _loadNodeBuiltinModule.apply(this, arguments);
+}
+function _loadNodeBuiltinModule() {
+  _loadNodeBuiltinModule = (0,asyncToGenerator/* default */.A)(function* (specifier, vm) {
+    const cacheKey = `node-builtin:${specifier}`;
+    if (esmModuleCache.has(cacheKey)) return esmModuleCache.get(cacheKey);
+    return createSyntheticModuleFromExports(cacheKey, yield importNodeModule(specifier), vm);
+  });
+  return _loadNodeBuiltinModule.apply(this, arguments);
+}
+function loadResolvedModule(_x12, _x13, _x14) {
+  return _loadResolvedModule.apply(this, arguments);
+}
+function _loadResolvedModule() {
+  _loadResolvedModule = (0,asyncToGenerator/* default */.A)(function* (specifier, parentUrl, options) {
+    if (yield isNodeBuiltinSpecifier(specifier)) return loadNodeBuiltinModule(specifier, options.vm);
+    if (isBareModuleSpecifier(specifier)) throw new Error(`Unsupported ESM module specifier "${specifier}". Only relative or absolute http(s) remote modules and Node.js built-in modules are supported.`);
+    const resolvedUrl = new URL(specifier, parentUrl).href;
+    if (!isFetchableRemoteModuleUrl(resolvedUrl)) throw new Error(`Unsupported ESM module specifier "${specifier}" resolved to "${resolvedUrl}". Only http(s) remote modules and Node.js built-in modules are supported.`);
+    return loadModule(resolvedUrl, options);
+  });
+  return _loadResolvedModule.apply(this, arguments);
+}
+function evaluateDynamicModule(_x15) {
+  return _evaluateDynamicModule.apply(this, arguments);
+}
+function _evaluateDynamicModule() {
+  _evaluateDynamicModule = (0,asyncToGenerator/* default */.A)(function* (module) {
+    if (module.status === "linked") yield module.evaluate();
+    if (module.status === "errored") throw module.error;
+    return module;
+  });
+  return _evaluateDynamicModule.apply(this, arguments);
+}
+function loadModule(_x16, _x17) {
   return _loadModule.apply(this, arguments);
 } //#endregion
 function _loadModule() {
@@ -2143,35 +2254,39 @@ function _loadModule() {
       fetch,
       vm
     } = options;
+    if (!isFetchableRemoteModuleUrl(url)) throw new Error(`Unsupported ESM module URL "${url}". Only http(s) remote modules and Node.js built-in modules are supported.`);
     const code = yield (yield fetch(url)).text();
-    const module = new vm.SourceTextModule(code, {
+    const cwdFileUrl = (yield importNodeModule("node:url")).pathToFileURL(process.cwd()).href;
+    const sourceTextModule = new vm.SourceTextModule(code, {
+      identifier: url,
+      initializeImportMeta: meta => {
+        meta.url = createImportMetaUrl(url, cwdFileUrl);
+      },
       importModuleDynamically: function () {
-        var _ref7 = (0,asyncToGenerator/* default */.A)(function* (specifier, script) {
-          const resolvedUrl = new URL(specifier, url).href;
-          return loadModule(resolvedUrl, options);
+        var _ref7 = (0,asyncToGenerator/* default */.A)(function* (specifier) {
+          return evaluateDynamicModule(yield loadResolvedModule(specifier, url, options));
         });
-        return function importModuleDynamically(_x0, _x1) {
+        return function importModuleDynamically(_x18) {
           return _ref7.apply(this, arguments);
         };
       }()
     });
-    esmModuleCache.set(url, module);
-    yield module.link(/*#__PURE__*/function () {
+    esmModuleCache.set(url, sourceTextModule);
+    yield sourceTextModule.link(/*#__PURE__*/function () {
       var _ref8 = (0,asyncToGenerator/* default */.A)(function* (specifier) {
-        const resolvedUrl = new URL(specifier, url).href;
-        return yield loadModule(resolvedUrl, options);
+        return loadResolvedModule(specifier, url, options);
       });
-      return function (_x10) {
+      return function (_x19) {
         return _ref8.apply(this, arguments);
       };
     }());
-    return module;
+    return sourceTextModule;
   });
   return _loadModule.apply(this, arguments);
 }
 
 //# sourceMappingURL=node.js.map
-;// ./node_modules/.pnpm/@module-federation+error-codes@2.5.0/node_modules/@module-federation/error-codes/dist/error-codes.mjs
+;// ./node_modules/.pnpm/@module-federation+error-codes@2.9.2/node_modules/@module-federation/error-codes/dist/error-codes.mjs
 //#region src/error-codes.ts
 const RUNTIME_001 = "RUNTIME-001";
 const RUNTIME_002 = "RUNTIME-002";
@@ -2195,7 +2310,7 @@ const BUILD_002 = "BUILD-002";
 //#endregion
 
 //# sourceMappingURL=error-codes.mjs.map
-;// ./node_modules/.pnpm/@module-federation+error-codes@2.5.0/node_modules/@module-federation/error-codes/dist/desc.mjs
+;// ./node_modules/.pnpm/@module-federation+error-codes@2.9.2/node_modules/@module-federation/error-codes/dist/desc.mjs
 
 
 //#region src/desc.ts
@@ -2232,7 +2347,7 @@ const errorDescMap = {
 //#endregion
 
 //# sourceMappingURL=desc.mjs.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/load.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/load.js
 
 
 
@@ -2242,23 +2357,50 @@ const errorDescMap = {
 
 //#region src/utils/load.ts
 const importCallback = ".then(callbacks[0]).catch(callbacks[1])";
+const remoteEntryLoadingOrigins = /* @__PURE__ */new WeakMap();
+const esmRemoteEntryLoadErrorMessages = ["Failed to fetch dynamically imported module", "Importing a module script failed", "error loading dynamically imported module"];
+function isEsmRemoteEntryLoadError(err) {
+  if (!(err instanceof TypeError)) return false;
+  return esmRemoteEntryLoadErrorMessages.some(loadErrorMessage => err.message.includes(loadErrorMessage));
+}
+function isEsmRemoteType(type) {
+  return type === "esm" || type === "module";
+}
 function loadEsmEntry(_x) {
   return _loadEsmEntry.apply(this, arguments);
 }
 function _loadEsmEntry() {
   _loadEsmEntry = (0,asyncToGenerator/* default */.A)(function* ({
     entry,
-    remoteEntryExports
+    remoteEntryExports,
+    name,
+    getEntryUrl
   }) {
     return new Promise((resolve, reject) => {
+      const rejectEntry = loadError => {
+        if (isEsmRemoteEntryLoadError(loadError)) {
+          const originalMsg = loadError instanceof Error ? loadError.message : String(loadError);
+          try {
+            logger_error(RUNTIME_008, runtimeDescMap, {
+              remoteName: name,
+              resourceUrl: url
+            }, originalMsg);
+          } catch (runtimeError) {
+            reject(runtimeError);
+            return;
+          }
+        }
+        reject(loadError);
+      };
+      const url = getEntryUrl ? getEntryUrl(entry) : entry;
       try {
         if (!remoteEntryExports) {
-          if (typeof FEDERATION_ALLOW_NEW_FUNCTION !== "undefined") new Function("callbacks", `import("${entry}")${importCallback}`)([resolve, reject]);else import(/* webpackIgnore: true */
+          if (typeof FEDERATION_ALLOW_NEW_FUNCTION !== "undefined") new Function("callbacks", `import("${url}")${importCallback}`)([resolve, rejectEntry]);else import(/* webpackIgnore: true */
           /* @vite-ignore */
-          entry).then(resolve).catch(reject);
+          url).then(resolve).catch(rejectEntry);
         } else resolve(remoteEntryExports);
       } catch (e) {
-        logger_error(`Failed to load ESM entry from "${entry}". ${e instanceof Error ? e.message : String(e)}`);
+        logger_error(`Failed to load ESM entry from "${url}". ${e instanceof Error ? e.message : String(e)}`);
       }
     });
   });
@@ -2360,29 +2502,25 @@ function _loadEntryDom() {
       name,
       type
     } = remoteInfo;
-    switch (type) {
-      case "esm":
-      case "module":
-        return loadEsmEntry({
-          entry,
-          remoteEntryExports
-        });
-      case "system":
-        return loadSystemJsEntry({
-          entry,
-          remoteEntryExports
-        });
-      default:
-        return loadEntryScript({
-          entry,
-          globalName,
-          name,
-          remoteInfo,
-          loaderHook,
-          getEntryUrl,
-          resourceContext
-        });
-    }
+    if (isEsmRemoteType(type)) return loadEsmEntry({
+      entry,
+      remoteEntryExports,
+      name,
+      getEntryUrl
+    });
+    if (type === "system") return loadSystemJsEntry({
+      entry,
+      remoteEntryExports
+    });
+    return loadEntryScript({
+      entry,
+      globalName,
+      name,
+      remoteInfo,
+      loaderHook,
+      getEntryUrl,
+      resourceContext
+    });
   });
   return _loadEntryDom.apply(this, arguments);
 }
@@ -2455,15 +2593,25 @@ function _getRemoteEntry() {
       _inErrorHandling = false
     } = params;
     const uniqueKey = getRemoteEntryUniqueKey(remoteInfo);
-    if (remoteEntryExports) return remoteEntryExports;
+    if (remoteEntryExports) {
+      yield origin.loaderHook.lifecycle.afterLoadEntry.emit({
+        origin,
+        remoteInfo,
+        remoteEntryExports,
+        resourceContext,
+        cached: true
+      });
+      return remoteEntryExports;
+    }
     if (!globalLoading[uniqueKey]) {
       const loadEntryHook = origin.remoteHandler.hooks.lifecycle.loadEntry;
       const loaderHook = origin.loaderHook;
-      globalLoading[uniqueKey] = loadEntryHook.emit({
+      const loading = loadEntryHook.emit({
         origin,
         loaderHook,
         remoteInfo,
-        remoteEntryExports
+        remoteEntryExports,
+        resourceContext
       }).then(res => {
         if (res) return res;
         return (typeof ENV_TARGET !== "undefined" ? ENV_TARGET === "web" : isBrowserEnvValue) ? loadEntryDom({
@@ -2482,7 +2630,8 @@ function _getRemoteEntry() {
           yield origin.loaderHook.lifecycle.afterLoadEntry.emit({
             origin,
             remoteInfo,
-            remoteEntryExports: res
+            remoteEntryExports: res,
+            resourceContext
           });
           return res;
         });
@@ -2490,17 +2639,16 @@ function _getRemoteEntry() {
           return _ref.apply(this, arguments);
         };
       }()).catch(/*#__PURE__*/function () {
-        var _ref2 = (0,asyncToGenerator/* default */.A)(function* (err) {
-          const uniqueKey = getRemoteEntryUniqueKey(remoteInfo);
-          const isScriptExecutionError = err instanceof Error && err.message.includes("ScriptExecutionError");
-          if (err instanceof Error && err.message.includes(RUNTIME_008) && !isScriptExecutionError && !_inErrorHandling) {
+        var _ref2 = (0,asyncToGenerator/* default */.A)(function* (loadError) {
+          const isScriptExecutionError = loadError instanceof Error && loadError.message.includes("ScriptExecutionError");
+          if (loadError instanceof Error && loadError.message.includes(RUNTIME_008) && !isScriptExecutionError && !_inErrorHandling) {
             const wrappedGetRemoteEntry = params => {
               return getRemoteEntry({
                 ...params,
                 _inErrorHandling: true
               });
             };
-            const RemoteEntryExports = yield origin.loaderHook.lifecycle.loadEntryError.emit({
+            const recoveredRemoteEntryExports = yield origin.loaderHook.lifecycle.loadEntryError.emit({
               getRemoteEntry: wrappedGetRemoteEntry,
               origin,
               remoteInfo,
@@ -2508,29 +2656,56 @@ function _getRemoteEntry() {
               globalLoading: globalLoading,
               uniqueKey
             });
-            if (RemoteEntryExports) {
+            if (recoveredRemoteEntryExports) {
               yield origin.loaderHook.lifecycle.afterLoadEntry.emit({
                 origin,
                 remoteInfo,
-                remoteEntryExports: RemoteEntryExports,
+                remoteEntryExports: recoveredRemoteEntryExports,
+                resourceContext,
+                error: loadError,
                 recovered: true
               });
-              return RemoteEntryExports;
+              return recoveredRemoteEntryExports;
             }
           }
           yield origin.loaderHook.lifecycle.afterLoadEntry.emit({
             origin,
             remoteInfo,
-            error: err
+            resourceContext,
+            error: loadError
           });
-          throw err;
+          throw loadError;
         });
         return function (_x8) {
           return _ref2.apply(this, arguments);
         };
       }());
+      globalLoading[uniqueKey] = loading;
+      loading.then(void 0, () => {
+        if (globalLoading[uniqueKey] === loading) delete globalLoading[uniqueKey];
+      });
+      remoteEntryLoadingOrigins.set(loading, origin);
     }
-    return globalLoading[uniqueKey];
+    const remoteEntryLoading = globalLoading[uniqueKey];
+    if (remoteEntryLoadingOrigins.get(remoteEntryLoading) !== origin) try {
+      const result = yield remoteEntryLoading;
+      yield origin.loaderHook.lifecycle.afterLoadEntry.emit({
+        origin,
+        remoteInfo,
+        remoteEntryExports: result,
+        resourceContext
+      });
+      return result;
+    } catch (loadError) {
+      yield origin.loaderHook.lifecycle.afterLoadEntry.emit({
+        origin,
+        remoteInfo,
+        resourceContext,
+        error: loadError
+      });
+      throw loadError;
+    }
+    return remoteEntryLoading;
   });
   return _getRemoteEntry.apply(this, arguments);
 }
@@ -2547,28 +2722,51 @@ function getRemoteInfo(remote) {
 //#endregion
 
 //# sourceMappingURL=load.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/plugin.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/plugin.js
+
+
 
 
 //#region src/utils/plugin.ts
-function registerPlugins(plugins, instance) {
-  const globalPlugins = getGlobalHostPlugins();
-  const hookInstances = [instance.hooks, instance.remoteHandler.hooks, instance.sharedHandler.hooks, instance.snapshotHandler.hooks, instance.loaderHook, instance.bridgeHook];
-  if (globalPlugins.length > 0) globalPlugins.forEach(plugin => {
-    if (plugins?.find(item => item.name !== plugin.name)) plugins.push(plugin);
+function getPluginsToRegister(plugins) {
+  const pluginsByName = /* @__PURE__ */new Map();
+  [...(plugins || []), ...getGlobalHostPlugins()].forEach(plugin => {
+    if (!plugin) return;
+    logger_assert(isPlainObject(plugin), "Plugin configuration is invalid.");
+    logger_assert(plugin.name, "A name must be provided by the plugin.");
+    if (!pluginsByName.has(plugin.name)) pluginsByName.set(plugin.name, plugin);
   });
-  if (plugins && plugins.length > 0) plugins.forEach(plugin => {
+  return Array.from(pluginsByName.values());
+}
+function getInstancePlugin(plugin, instanceHooks) {
+  if (instanceHooks === void 0) return plugin;
+  return {
+    ...instanceHooks,
+    name: plugin.name,
+    version: plugin.version
+  };
+}
+function registerPlugins(plugins, instance) {
+  const registeredPlugins = /* @__PURE__ */new Map();
+  instance.options.plugins.forEach(plugin => {
+    if (plugin) registeredPlugins.set(plugin.name, plugin);
+  });
+  const hookInstances = [instance.hooks, instance.remoteHandler.hooks, instance.sharedHandler.hooks, instance.snapshotHandler.hooks, instance.loaderHook, instance.bridgeHook];
+  getPluginsToRegister(plugins).forEach(plugin => {
+    registeredPlugins.set(plugin.name, plugin);
+    if (instance.hooks.registerPlugins[plugin.name]) return;
+    const instancePlugin = getInstancePlugin(plugin, plugin.apply?.(instance));
     hookInstances.forEach(hookInstance => {
-      hookInstance.applyPlugin(plugin, instance);
+      hookInstance.applyPlugin(instancePlugin);
     });
   });
-  return plugins;
+  return Array.from(registeredPlugins.values());
 }
 
 //#endregion
 
 //# sourceMappingURL=plugin.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/index.js
 
 
 
@@ -2577,7 +2775,7 @@ function registerPlugins(plugins, instance) {
 
 
 
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/manifest.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/manifest.js
 //#region src/utils/manifest.ts
 function composeRemoteRequestId(remoteName, expose) {
   if (!expose || expose === ".") return remoteName;
@@ -2631,7 +2829,8 @@ function matchRemote(remotes, nameOrAlias) {
 //#endregion
 
 //# sourceMappingURL=manifest.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/preload.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/preload.js
+
 
 
 
@@ -2644,6 +2843,7 @@ function defaultPreloadArgs(preloadConfig) {
     resourceCategory: "sync",
     share: true,
     depsRemote: true,
+    recordPreloadedAssets: true,
     ...preloadConfig
   };
 }
@@ -2681,6 +2881,12 @@ function createAssetResult(context, url, status, error) {
     id: context.id,
     error
   };
+}
+function preloadAssetOnce(context, url, recordPreloadedAssets, preload) {
+  if (!recordPreloadedAssets) return preload();
+  if (getPreloadedAsset(url)) return Promise.resolve(createAssetResult(context, url, "cached"));
+  setPreloadedAsset(url);
+  return preload();
 }
 function waitForRemoteEntryPreload(_x, _x2, _x3, _x4) {
   return _waitForRemoteEntryPreload.apply(this, arguments);
@@ -2793,7 +2999,7 @@ function createResourceContext(baseContext, resourceType) {
 function preloadAssets(remoteInfo, host, assets, useLinkPreload = true, baseContext = {
   initiator: "preloadRemote",
   id: remoteInfo.name
-}) {
+}, recordPreloadedAssets = true) {
   const {
     cssAssets,
     jsAssetsWithoutEntry,
@@ -2813,13 +3019,14 @@ function preloadAssets(remoteInfo, host, assets, useLinkPreload = true, baseCont
         as: "style"
       };
       cssAssets.forEach(cssUrl => {
-        results.push(waitForLinkPreload({
+        const context = createResourceContext(baseContext, "css");
+        results.push(preloadAssetOnce(context, cssUrl, recordPreloadedAssets, () => waitForLinkPreload({
           host,
           remoteInfo,
           url: cssUrl,
           attrs: defaultAttrs,
-          context: createResourceContext(baseContext, "css")
-        }));
+          context
+        })));
       });
     } else {
       const defaultAttrs = {
@@ -2827,45 +3034,45 @@ function preloadAssets(remoteInfo, host, assets, useLinkPreload = true, baseCont
         type: "text/css"
       };
       cssAssets.forEach(cssUrl => {
-        results.push(waitForLinkPreload({
+        const context = createResourceContext(baseContext, "css");
+        results.push(preloadAssetOnce(context, cssUrl, recordPreloadedAssets, () => waitForLinkPreload({
           host,
           remoteInfo,
           url: cssUrl,
           attrs: defaultAttrs,
           needDeleteLink: false,
-          context: createResourceContext(baseContext, "css")
-        }));
+          context
+        })));
       });
     }
+    let preloadJsAsset = waitForScriptPreload;
+    let defaultAttrs = {
+      fetchpriority: "high",
+      type: "text/javascript"
+    };
     if (useLinkPreload) {
-      const defaultAttrs = {
+      preloadJsAsset = waitForLinkPreload;
+      defaultAttrs = {
         rel: "preload",
         as: "script"
       };
-      jsAssetsWithoutEntry.forEach(jsUrl => {
-        results.push(waitForLinkPreload({
-          host,
-          remoteInfo,
-          url: jsUrl,
-          attrs: defaultAttrs,
-          context: createResourceContext(baseContext, "js")
-        }));
-      });
-    } else {
-      const defaultAttrs = {
-        fetchpriority: "high",
-        type: remoteInfo?.type === "module" ? "module" : "text/javascript"
+    } else if (isEsmRemoteType(remoteInfo.type)) {
+      preloadJsAsset = waitForLinkPreload;
+      defaultAttrs = {
+        rel: "modulepreload",
+        fetchpriority: "high"
       };
-      jsAssetsWithoutEntry.forEach(jsUrl => {
-        results.push(waitForScriptPreload({
-          host,
-          remoteInfo,
-          url: jsUrl,
-          attrs: defaultAttrs,
-          context: createResourceContext(baseContext, "js")
-        }));
-      });
     }
+    jsAssetsWithoutEntry.forEach(jsUrl => {
+      const context = createResourceContext(baseContext, "js");
+      results.push(preloadAssetOnce(context, jsUrl, recordPreloadedAssets, () => preloadJsAsset({
+        host,
+        remoteInfo,
+        url: jsUrl,
+        attrs: defaultAttrs,
+        context
+      })));
+    });
   }
   return Promise.all(results);
 }
@@ -2873,7 +3080,7 @@ function preloadAssets(remoteInfo, host, assets, useLinkPreload = true, baseCont
 //#endregion
 
 //# sourceMappingURL=preload.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/helpers.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/helpers.js
 
 
 
@@ -2918,7 +3125,7 @@ var helpers_default = {
 //#endregion
 
 //# sourceMappingURL=helpers.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/context.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/context.js
 //#region src/utils/context.ts
 function remoteToEntry(r) {
   return {
@@ -2963,7 +3170,7 @@ function optionsToMFContext(options) {
 //#endregion
 
 //# sourceMappingURL=context.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/module/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/module/index.js
 
 
 
@@ -3012,29 +3219,31 @@ var Module$1 = class {
     this.remoteInfo = remoteInfo;
     this.host = host;
   }
-  getEntry(expose) {
+  getEntry(expose, resourceContext) {
     var _this = this;
     return (0,asyncToGenerator/* default */.A)(function* () {
-      if (_this.remoteEntryExports) return _this.remoteEntryExports;
+      const effectiveResourceContext = resourceContext || {
+        initiator: "loadRemote",
+        id: composeRemoteRequestId(_this.remoteInfo.name, expose),
+        resourceType: "remoteEntry",
+        url: _this.remoteInfo.entry,
+        expose
+      };
       const remoteEntryExports = yield getRemoteEntry({
         origin: _this.host,
         remoteInfo: _this.remoteInfo,
         remoteEntryExports: _this.remoteEntryExports,
-        resourceContext: {
-          initiator: "loadRemote",
-          id: composeRemoteRequestId(_this.remoteInfo.name, expose),
-          resourceType: "remoteEntry"
-        }
+        resourceContext: effectiveResourceContext
       });
       logger_assert(remoteEntryExports, `remoteEntryExports is undefined \n ${safeToString(_this.remoteInfo)}`);
       _this.remoteEntryExports = remoteEntryExports;
       return _this.remoteEntryExports;
     })();
   }
-  init(id, remoteSnapshot, rawInitScope, expose) {
+  init(id, remoteSnapshot, rawInitScope, expose, resourceContext) {
     var _this2 = this;
     return (0,asyncToGenerator/* default */.A)(function* () {
-      const remoteEntryExports = yield _this2.getEntry(expose);
+      const remoteEntryExports = yield _this2.getEntry(expose, resourceContext);
       if (_this2.inited) {
         yield _this2.host.loaderHook.lifecycle.afterInitRemote.emit({
           id,
@@ -3251,18 +3460,46 @@ var Module$1 = class {
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/env.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/hooks/pluginSystem.js
 
 
-//#region src/utils/env.ts
-function getBuilderId() {
-  return  true ? "mfeDecide:0.0.0" : 0;
-}
+
+
+//#region src/utils/hooks/pluginSystem.ts
+var PluginSystem = class {
+  constructor(lifecycle) {
+    this.registerPlugins = {};
+    this.lifecycle = lifecycle;
+    this.lifecycleKeys = Object.keys(lifecycle);
+  }
+  applyPlugin(plugin) {
+    logger_assert(isPlainObject(plugin), "Plugin configuration is invalid.");
+    const pluginName = plugin.name;
+    logger_assert(pluginName, "A name must be provided by the plugin.");
+    if (!this.registerPlugins[pluginName]) {
+      this.registerPlugins[pluginName] = plugin;
+      this.lifecycleKeys.forEach(key => {
+        const pluginLife = plugin[key];
+        if (pluginLife) this.lifecycle[key].on(pluginLife);
+      });
+    }
+  }
+  removePlugin(pluginName) {
+    logger_assert(pluginName, "A name is required.");
+    const plugin = this.registerPlugins[pluginName];
+    logger_assert(plugin, `The plugin "${pluginName}" is not registered.`);
+    this.lifecycleKeys.forEach(key => {
+      const pluginLife = plugin[key];
+      if (pluginLife) this.lifecycle[key].remove(pluginLife);
+    });
+    delete this.registerPlugins[pluginName];
+  }
+};
 
 //#endregion
 
-//# sourceMappingURL=env.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/hooks/syncHook.js
+//# sourceMappingURL=pluginSystem.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/hooks/syncHook.js
 //#region src/utils/hooks/syncHook.ts
 var SyncHook = class {
   constructor(type) {
@@ -3299,32 +3536,7 @@ var SyncHook = class {
 //#endregion
 
 //# sourceMappingURL=syncHook.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/hooks/asyncHook.js
-
-
-//#region src/utils/hooks/asyncHook.ts
-var AsyncHook = class extends SyncHook {
-  emit(...data) {
-    let result;
-    const ls = Array.from(this.listeners);
-    if (ls.length > 0) {
-      let i = 0;
-      const call = prev => {
-        if (prev === false) return false;else if (i < ls.length) return Promise.resolve(ls[i++].apply(null, data)).then(result => {
-          if (result === void 0 || data.length === 1 && result === data[0]) return call(prev);
-          return call(result);
-        });else return prev;
-      };
-      result = call();
-    }
-    return Promise.resolve(result);
-  }
-};
-
-//#endregion
-
-//# sourceMappingURL=asyncHook.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/hooks/syncWaterfallHook.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/hooks/syncWaterfallHook.js
 
 
 
@@ -3363,7 +3575,7 @@ var SyncWaterfallHook = class extends SyncHook {
 //#endregion
 
 //# sourceMappingURL=syncWaterfallHook.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/hooks/asyncWaterfallHooks.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/hooks/asyncWaterfallHooks.js
 
 
 
@@ -3407,52 +3619,88 @@ var AsyncWaterfallHook = class extends SyncHook {
 //#endregion
 
 //# sourceMappingURL=asyncWaterfallHooks.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/hooks/pluginSystem.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/hooks/index.js
 
 
 
 
-//#region src/utils/hooks/pluginSystem.ts
-var PluginSystem = class {
-  constructor(lifecycle) {
-    this.registerPlugins = {};
-    this.lifecycle = lifecycle;
-    this.lifecycleKeys = Object.keys(lifecycle);
+
+
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/remote/disabled.js
+
+
+
+//#region src/remote/disabled.ts
+const REMOTE_DISABLED_MESSAGE = "Remote loading is disabled by experiments.optimization.disableRemote.";
+var UnavailableRemoteModule = class {
+  constructor() {
+    throw new Error(REMOTE_DISABLED_MESSAGE);
   }
-  applyPlugin(plugin, instance) {
-    logger_assert(isPlainObject(plugin), "Plugin configuration is invalid.");
-    const pluginName = plugin.name;
-    logger_assert(pluginName, "A name must be provided by the plugin.");
-    if (!this.registerPlugins[pluginName]) {
-      this.registerPlugins[pluginName] = plugin;
-      plugin.apply?.(instance);
-      Object.keys(this.lifecycle).forEach(key => {
-        const pluginLife = plugin[key];
-        if (pluginLife) this.lifecycle[key].on(pluginLife);
-      });
-    }
+};
+var DisabledRemoteHandler = class {
+  constructor() {
+    this.hooks = new PluginSystem({});
   }
-  removePlugin(pluginName) {
-    logger_assert(pluginName, "A name is required.");
-    const plugin = this.registerPlugins[pluginName];
-    logger_assert(plugin, `The plugin "${pluginName}" is not registered.`);
-    Object.keys(plugin).forEach(key => {
-      if (key !== "name") this.lifecycle[key].remove(plugin[key]);
-    });
+  formatAndRegisterRemote() {
+    return [];
+  }
+  loadRemote() {
+    throw new Error(REMOTE_DISABLED_MESSAGE);
+  }
+  preloadRemote() {
+    throw new Error(REMOTE_DISABLED_MESSAGE);
+  }
+  registerRemotes() {
+    throw new Error(REMOTE_DISABLED_MESSAGE);
+  }
+  getRemoteModuleAndOptions() {
+    throw new Error(REMOTE_DISABLED_MESSAGE);
+  }
+  initRawContainer() {
+    throw new Error(REMOTE_DISABLED_MESSAGE);
   }
 };
 
 //#endregion
 
-//# sourceMappingURL=pluginSystem.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/utils/hooks/index.js
+//# sourceMappingURL=disabled.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/env.js
 
 
+//#region src/utils/env.ts
+function getBuilderId() {
+  return  true ? "mfeDecide:0.0.0" : 0;
+}
+
+//#endregion
+
+//# sourceMappingURL=env.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/utils/hooks/asyncHook.js
 
 
+//#region src/utils/hooks/asyncHook.ts
+var AsyncHook = class extends SyncHook {
+  emit(...data) {
+    let result;
+    const ls = Array.from(this.listeners);
+    if (ls.length > 0) {
+      let i = 0;
+      const call = prev => {
+        if (prev === false) return false;else if (i < ls.length) return Promise.resolve(ls[i++].apply(null, data)).then(result => {
+          if (result === void 0 || data.length === 1 && result === data[0]) return call(prev);
+          return call(result);
+        });else return prev;
+      };
+      result = call();
+    }
+    return Promise.resolve(result);
+  }
+};
 
+//#endregion
 
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/plugins/snapshot/index.js
+//# sourceMappingURL=asyncHook.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/plugins/snapshot/index.js
 
 
 
@@ -3498,28 +3746,38 @@ function snapshotPlugin() {
             id: composeRemoteRequestId(remote.name, expose)
           });
           assignRemoteInfo(remoteInfo, remoteSnapshot);
-          const preloadOptions = {
-            remote,
-            preloadConfig: {
-              nameOrAlias: pkgNameOrAlias,
-              exposes: [expose],
-              resourceCategory: "sync",
-              share: false,
-              depsRemote: false
-            }
-          };
-          const assets = yield origin.remoteHandler.hooks.lifecycle.generatePreloadAssets.emit({
-            origin,
-            preloadOptions,
-            remoteInfo,
-            remote,
-            remoteSnapshot,
-            globalSnapshot
+          const preloadOps = [{
+            nameOrAlias: pkgNameOrAlias,
+            exposes: [expose],
+            resourceCategory: "sync",
+            share: false,
+            depsRemote: false,
+            recordPreloadedAssets: true
+          }];
+          yield origin.remoteHandler.hooks.lifecycle.beforePreloadRemote.emit({
+            preloadOps,
+            options: origin.options,
+            origin
           });
-          if (assets) preloadAssets(remoteInfo, origin, assets, false, {
-            initiator: "loadRemote",
-            id
-          }).catch(() => void 0);
+          const [preloadConfig] = preloadOps;
+          if (preloadConfig) {
+            const preloadOptions = {
+              remote,
+              preloadConfig
+            };
+            const assets = yield origin.remoteHandler.hooks.lifecycle.generatePreloadAssets.emit({
+              origin,
+              preloadOptions,
+              remoteInfo,
+              remote,
+              remoteSnapshot,
+              globalSnapshot
+            });
+            if (assets) preloadAssets(remoteInfo, origin, assets, false, {
+              initiator: "loadRemote",
+              id
+            }, preloadConfig.recordPreloadedAssets).catch(() => void 0);
+          }
           return {
             ...args,
             remoteSnapshot
@@ -3534,7 +3792,7 @@ function snapshotPlugin() {
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/generateSnapshotFromManifest.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/generateSnapshotFromManifest.js
 /* unused harmony import specifier */ var generateSnapshotFromManifest_StatsFileName;
 /* unused harmony import specifier */ var generateSnapshotFromManifest_ManifestFileName;
 
@@ -3675,7 +3933,7 @@ function getManifestFileName(manifestOptions) {
 //#endregion
 
 //# sourceMappingURL=generateSnapshotFromManifest.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/plugins/generate-preload-assets.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/plugins/generate-preload-assets.js
 
 
 
@@ -3874,7 +4132,7 @@ const generatePreloadAssetsPlugin = function () {
 //#endregion
 
 //# sourceMappingURL=generate-preload-assets.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/plugins/snapshot/SnapshotHandler.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/plugins/snapshot/SnapshotHandler.js
 
 
 
@@ -3921,7 +4179,9 @@ var SnapshotHandler = class {
       beforeLoadRemoteSnapshot: new AsyncHook("beforeLoadRemoteSnapshot"),
       loadSnapshot: new AsyncWaterfallHook("loadGlobalSnapshot"),
       loadRemoteSnapshot: new AsyncWaterfallHook("loadRemoteSnapshot"),
-      afterLoadSnapshot: new AsyncWaterfallHook("afterLoadSnapshot")
+      afterLoadSnapshot: new AsyncWaterfallHook("afterLoadSnapshot"),
+      beforeLoadManifest: new AsyncHook("beforeLoadManifest"),
+      afterLoadManifest: new AsyncHook("afterLoadManifest")
     });
     this.manifestLoading = Global.__FEDERATION__.__MANIFEST_LOADING__;
     this.HostInstance = HostInstance;
@@ -4043,7 +4303,26 @@ var SnapshotHandler = class {
         var _ref = (0,asyncToGenerator/* default */.A)(function* () {
           const remoteInfo = getRemoteInfo(moduleInfo);
           let manifestJson = _this2.manifestCache.get(manifestUrl);
-          if (manifestJson) return manifestJson;
+          if (manifestJson) {
+            yield _this2.hooks.lifecycle.afterLoadManifest.emit({
+              manifestUrl,
+              moduleInfo,
+              resourceOptions,
+              manifestJson,
+              cached: true,
+              origin: _this2.HostInstance
+            });
+            return manifestJson;
+          }
+          yield _this2.hooks.lifecycle.beforeLoadManifest.emit({
+            manifestUrl,
+            moduleInfo,
+            resourceOptions,
+            origin: _this2.HostInstance
+          });
+          let response;
+          let loadError;
+          let recovered = false;
           try {
             let res = yield _this2.loaderHook.lifecycle.fetch.emit(manifestUrl, {}, remoteInfo, resourceOptions ? {
               ...resourceOptions,
@@ -4051,8 +4330,10 @@ var SnapshotHandler = class {
               resourceType: "manifest"
             } : void 0);
             if (!res || !(res instanceof Response)) res = yield fetch(manifestUrl, {});
+            response = res;
             manifestJson = yield res.json();
           } catch (err) {
+            loadError = err;
             manifestJson = yield _this2.HostInstance.remoteHandler.hooks.lifecycle.errorLoadRemote.emit({
               id: manifestUrl,
               error: err,
@@ -4063,23 +4344,43 @@ var SnapshotHandler = class {
             });
             if (!manifestJson) {
               delete _this2.manifestLoading[manifestUrl];
+              yield _this2.hooks.lifecycle.afterLoadManifest.emit({
+                manifestUrl,
+                moduleInfo,
+                resourceOptions,
+                response,
+                error: err,
+                origin: _this2.HostInstance
+              });
               logger_error(RUNTIME_003, runtimeDescMap, {
                 manifestUrl,
                 moduleName: moduleInfo.name,
                 hostName: _this2.HostInstance.options.name
               }, `${err}`, optionsToMFContext(_this2.HostInstance.options));
             }
+            recovered = true;
           }
           const missingRequiredFields = [!manifestJson.metaData && "metaData", !manifestJson.exposes && "exposes", !manifestJson.shared && "shared"].filter(Boolean);
-          if (missingRequiredFields.length > 0) yield _this2.HostInstance.remoteHandler.hooks.lifecycle.errorLoadRemote.emit({
+          const validationError = missingRequiredFields.length > 0 ? /* @__PURE__ */new Error(`"${manifestUrl}" is not a valid federation manifest for remote "${moduleInfo.name}". Missing required fields: ${missingRequiredFields.join(", ")}.`) : void 0;
+          if (validationError) yield _this2.HostInstance.remoteHandler.hooks.lifecycle.errorLoadRemote.emit({
             id: manifestUrl,
-            error: /* @__PURE__ */new Error(`"${manifestUrl}" is not a valid federation manifest for remote "${moduleInfo.name}". Missing required fields: ${missingRequiredFields.join(", ")}.`),
+            error: validationError,
             from: "runtime",
             lifecycle: "afterResolve",
             remote: remoteInfo,
             origin: _this2.HostInstance
           });
-          if (missingRequiredFields.length > 0) logger_error(RUNTIME_013, runtimeDescMap, {
+          yield _this2.hooks.lifecycle.afterLoadManifest.emit({
+            manifestUrl,
+            moduleInfo,
+            resourceOptions,
+            manifestJson,
+            response,
+            error: validationError || loadError,
+            recovered: validationError ? void 0 : recovered || void 0,
+            origin: _this2.HostInstance
+          });
+          if (validationError) logger_error(RUNTIME_013, runtimeDescMap, {
             manifestUrl,
             moduleName: moduleInfo.name,
             hostName: _this2.HostInstance.options.name,
@@ -4129,7 +4430,21 @@ var SnapshotHandler = class {
 //#endregion
 
 //# sourceMappingURL=SnapshotHandler.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/shared/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/plugins/snapshot/disabled.js
+
+
+
+//#region src/plugins/snapshot/disabled.ts
+var DisabledSnapshotHandler = class {
+  constructor() {
+    this.hooks = new PluginSystem({});
+  }
+};
+
+//#endregion
+
+//# sourceMappingURL=disabled.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/shared/index.js
 
 
 
@@ -4149,6 +4464,7 @@ var SharedHandler = class {
   constructor(host) {
     this.hooks = new PluginSystem({
       beforeRegisterShare: new SyncWaterfallHook("beforeRegisterShare"),
+      afterRegisterShare: new SyncHook("afterRegisterShare"),
       afterResolve: new AsyncWaterfallHook("afterResolve"),
       beforeLoadShare: new AsyncWaterfallHook("beforeLoadShare"),
       loadShare: new AsyncHook(),
@@ -4162,11 +4478,20 @@ var SharedHandler = class {
     this.initTokens = {};
     this._setGlobalShareScopeMap(host.options);
   }
+  emitAfterRegisterShare(pkgName, input) {
+    this.hooks.lifecycle.afterRegisterShare.emit({
+      pkgName,
+      ...input,
+      shareScopeMap: this.shareScopeMap,
+      origin: this.host
+    });
+  }
   emitAfterLoadShare({
     lifecycle,
     pkgName,
     shareInfo,
-    selectedShared
+    selectedShared,
+    loadContext
   }) {
     try {
       this.hooks.lifecycle.afterLoadShare.emit({
@@ -4176,6 +4501,7 @@ var SharedHandler = class {
         shared: this.host.options.shared,
         shareScopeMap: this.shareScopeMap,
         lifecycle,
+        loadContext,
         origin: this.host
       });
     } catch (error) {
@@ -4187,7 +4513,8 @@ var SharedHandler = class {
     pkgName,
     shareInfo,
     error,
-    recovered
+    recovered,
+    loadContext
   }) {
     try {
       this.hooks.lifecycle.errorLoadShare.emit({
@@ -4198,7 +4525,8 @@ var SharedHandler = class {
         lifecycle,
         origin: this.host,
         error,
-        recovered
+        recovered,
+        loadContext
       });
     } catch (hookError) {
       warn$1(hookError);
@@ -4217,13 +4545,22 @@ var SharedHandler = class {
             pkgName: sharedKey,
             shared: sharedVal
           });
-          if (!this.shareScopeMap[sc]?.[sharedKey]) this.setShared({
+          const registeredShared = this.shareScopeMap[sc]?.[sharedKey];
+          const previousAtVersion = registeredShared?.[sharedVal.version];
+          if (!registeredShared) this.setShared({
             pkgName: sharedKey,
             lib: sharedVal.lib,
             get: sharedVal.get,
             loaded: sharedVal.loaded || Boolean(sharedVal.lib),
             shared: sharedVal,
             from: userOptions.name
+          });
+          this.emitAfterRegisterShare(sharedKey, {
+            scope: sc,
+            shared: sharedVal,
+            previousShared: previousAtVersion,
+            registeredShared: this.shareScopeMap[sc]?.[sharedKey]?.[sharedVal.version],
+            trigger: "runtime"
           });
         });
       });
@@ -4239,6 +4576,7 @@ var SharedHandler = class {
       const {
         host
       } = _this;
+      let loadContext = extraOptions?.context;
       const shareOptions = getTargetSharedOptions({
         pkgName,
         extraOptions,
@@ -4249,25 +4587,29 @@ var SharedHandler = class {
         if (shareOptions?.scope) yield Promise.all(shareOptions.scope.map(/*#__PURE__*/function () {
           var _ref = (0,asyncToGenerator/* default */.A)(function* (shareScope) {
             yield Promise.all(_this.initializeSharing(shareScope, {
-              strategy: shareOptions.strategy
+              strategy: shareOptions.strategy,
+              context: loadContext
             }));
           });
           return function (_x) {
             return _ref.apply(this, arguments);
           };
         }()));
-        shareOptionsRes = (yield _this.hooks.lifecycle.beforeLoadShare.emit({
+        const loadShareRes = yield _this.hooks.lifecycle.beforeLoadShare.emit({
           pkgName,
           shareInfo: shareOptions,
           shared: host.options.shared,
-          origin: host
-        })).shareInfo;
+          origin: host,
+          loadContext
+        });
+        shareOptionsRes = loadShareRes.shareInfo;
+        loadContext = loadShareRes.loadContext || loadContext;
         logger_assert(shareOptionsRes, `Cannot find shared "${pkgName}" in host "${host.options.name}". Ensure the shared config for "${pkgName}" is declared in the federation plugin options and the host has been initialized before loading shares.`);
         const resolvedShareOptions = shareOptionsRes;
         const {
           shared: registeredShared,
           useTreesShaking
-        } = getRegisteredShare(_this.shareScopeMap, pkgName, shareOptionsRes, _this.hooks.lifecycle.resolveShare) || {};
+        } = getRegisteredShare(_this.shareScopeMap, pkgName, shareOptionsRes, _this.hooks.lifecycle.resolveShare, loadContext) || {};
         if (registeredShared) {
           const targetShared = directShare(registeredShared, useTreesShaking);
           if (targetShared.lib) {
@@ -4276,7 +4618,8 @@ var SharedHandler = class {
               lifecycle: "loadShare",
               pkgName,
               shareInfo: resolvedShareOptions,
-              selectedShared: registeredShared
+              selectedShared: registeredShared,
+              loadContext
             });
             return targetShared.lib;
           } else if (targetShared.loading && !targetShared.loaded) {
@@ -4288,7 +4631,8 @@ var SharedHandler = class {
               lifecycle: "loadShare",
               pkgName,
               shareInfo: resolvedShareOptions,
-              selectedShared: registeredShared
+              selectedShared: registeredShared,
+              loadContext
             });
             return factory;
           } else {
@@ -4319,7 +4663,8 @@ var SharedHandler = class {
               lifecycle: "loadShare",
               pkgName,
               shareInfo: resolvedShareOptions,
-              selectedShared: registeredShared
+              selectedShared: registeredShared,
+              loadContext
             });
             return factory;
           }
@@ -4329,7 +4674,8 @@ var SharedHandler = class {
               lifecycle: "loadShare",
               pkgName,
               shareInfo: resolvedShareOptions,
-              recovered: true
+              recovered: true,
+              loadContext
             });
             return false;
           }
@@ -4344,7 +4690,7 @@ var SharedHandler = class {
               const {
                 shared: gShared,
                 useTreesShaking: gUseTreeShaking
-              } = getRegisteredShare(_this.shareScopeMap, pkgName, resolvedShareOptions, _this.hooks.lifecycle.resolveShare) || {};
+              } = getRegisteredShare(_this.shareScopeMap, pkgName, resolvedShareOptions, _this.hooks.lifecycle.resolveShare, loadContext) || {};
               if (gShared) {
                 const targetGShared = directShare(gShared, gUseTreeShaking);
                 targetGShared.lib = factory;
@@ -4372,7 +4718,8 @@ var SharedHandler = class {
             lifecycle: "loadShare",
             pkgName,
             shareInfo: resolvedShareOptions,
-            selectedShared: resolvedShareOptions
+            selectedShared: resolvedShareOptions,
+            loadContext
           });
           return factory;
         }
@@ -4381,7 +4728,8 @@ var SharedHandler = class {
           lifecycle: "loadShare",
           pkgName,
           shareInfo: shareOptionsRes,
-          error: shareError
+          error: shareError,
+          loadContext
         });
         throw shareError;
       }
@@ -4398,6 +4746,7 @@ var SharedHandler = class {
     } = this;
     const from = extraOptions?.from;
     const strategy = extraOptions?.strategy;
+    const trigger = extraOptions?.context?.trigger || from || "runtime";
     let initScope = extraOptions?.initScope;
     const promises = [];
     if (from !== "build") {
@@ -4423,9 +4772,17 @@ var SharedHandler = class {
       } = shared;
       scope[name] = scope[name] || {};
       const versions = scope[name];
-      const activeVersion = versions[version] && directShare(versions[version]);
+      const existingShared = versions[version];
+      const activeVersion = existingShared && directShare(existingShared);
       const activeVersionEager = Boolean(activeVersion && ("eager" in activeVersion && activeVersion.eager || "shareConfig" in activeVersion && activeVersion.shareConfig?.eager));
-      if (!activeVersion || activeVersion.strategy !== "loaded-first" && !activeVersion.loaded && (Boolean(!eager) !== !activeVersionEager ? eager : hostName > versions[version].from)) versions[version] = shared;
+      if (Boolean(!activeVersion || activeVersion.strategy !== "loaded-first" && !activeVersion.loaded && (Boolean(!eager) !== !activeVersionEager ? eager : hostName > versions[version].from))) versions[version] = shared;
+      this.emitAfterRegisterShare(name, {
+        scope: shareScopeName,
+        shared,
+        previousShared: existingShared,
+        registeredShared: versions[version],
+        trigger
+      });
     };
     const initRemoteModule = /*#__PURE__*/function () {
       var _ref4 = (0,asyncToGenerator/* default */.A)(function* (key) {
@@ -4435,8 +4792,14 @@ var SharedHandler = class {
           id: key
         });
         let remoteEntryExports = void 0;
+        const resourceContext = {
+          initiator: "loadShare",
+          id: key,
+          resourceType: "remoteEntry",
+          url: module.remoteInfo.entry
+        };
         try {
-          remoteEntryExports = yield module.getEntry();
+          remoteEntryExports = yield module.getEntry(void 0, resourceContext);
         } catch (error) {
           remoteEntryExports = yield host.remoteHandler.hooks.lifecycle.errorLoadRemote.emit({
             id: key,
@@ -4450,7 +4813,7 @@ var SharedHandler = class {
         } finally {
           if (remoteEntryExports?.init && !module.initing) {
             module.remoteEntryExports = remoteEntryExports;
-            yield module.init(void 0, void 0, initScope);
+            yield module.init(void 0, void 0, initScope, void 0, resourceContext);
           }
         }
       });
@@ -4472,6 +4835,7 @@ var SharedHandler = class {
     const {
       host
     } = this;
+    const loadContext = extraOptions?.context;
     const shareOptions = getTargetSharedOptions({
       pkgName,
       extraOptions,
@@ -4480,12 +4844,14 @@ var SharedHandler = class {
     try {
       if (shareOptions?.scope) shareOptions.scope.forEach(shareScope => {
         this.initializeSharing(shareScope, {
-          strategy: shareOptions.strategy
+          strategy: shareOptions.strategy,
+          from: extraOptions?.from,
+          context: loadContext
         });
       });
       const {
         shared: registeredShared
-      } = getRegisteredShare(this.shareScopeMap, pkgName, shareOptions, this.hooks.lifecycle.resolveShare) || {};
+      } = getRegisteredShare(this.shareScopeMap, pkgName, shareOptions, this.hooks.lifecycle.resolveShare, loadContext) || {};
       if (registeredShared) {
         if (typeof registeredShared.lib === "function") {
           addUseIn(registeredShared, host.options.name);
@@ -4497,7 +4863,8 @@ var SharedHandler = class {
             lifecycle: "loadShareSync",
             pkgName,
             shareInfo: shareOptions,
-            selectedShared: registeredShared
+            selectedShared: registeredShared,
+            loadContext
           });
           return registeredShared.lib;
         }
@@ -4516,7 +4883,8 @@ var SharedHandler = class {
               lifecycle: "loadShareSync",
               pkgName,
               shareInfo: shareOptions,
-              selectedShared: registeredShared
+              selectedShared: registeredShared,
+              loadContext
             });
             return module;
           }
@@ -4528,7 +4896,8 @@ var SharedHandler = class {
           lifecycle: "loadShareSync",
           pkgName,
           shareInfo: shareOptions,
-          selectedShared: shareOptions
+          selectedShared: shareOptions,
+          loadContext
         });
         return shareOptions.lib;
       }
@@ -4550,7 +4919,8 @@ var SharedHandler = class {
           lifecycle: "loadShareSync",
           pkgName,
           shareInfo: shareOptions,
-          selectedShared: shareOptions
+          selectedShared: shareOptions,
+          loadContext
         });
         return shareOptions.lib;
       }
@@ -4563,7 +4933,8 @@ var SharedHandler = class {
         lifecycle: "loadShareSync",
         pkgName,
         shareInfo: shareOptions,
-        error: shareError
+        error: shareError,
+        loadContext
       });
       throw shareError;
     }
@@ -4605,6 +4976,7 @@ var SharedHandler = class {
       merge(targetShared, "loaded", loaded);
       merge(targetShared, "loading", loading);
       merge(targetShared, "get", get);
+      merge(targetShared, "lib", lib);
     };
     scopes.forEach(sc => {
       if (!this.shareScopeMap[sc]) this.shareScopeMap[sc] = {};
@@ -4630,7 +5002,44 @@ var SharedHandler = class {
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/remote/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/shared/disabled.js
+
+
+
+
+//#region src/shared/disabled.ts
+var DisabledSharedHandler = class {
+  constructor() {
+    this.shareScopeMap = {};
+    this.hooks = new PluginSystem({
+      afterResolve: new AsyncWaterfallHook("afterResolve")
+    });
+  }
+  registerShared() {
+    return {
+      newShareInfos: {},
+      allShareInfos: {}
+    };
+  }
+  loadShare() {
+    throw new Error("Shared dependency loading is disabled by experiments.optimization.disableShared.");
+  }
+  loadShareSync() {
+    throw new Error("Shared dependency loading is disabled by experiments.optimization.disableShared.");
+  }
+  initializeSharing() {
+    return [];
+  }
+  initShareScopeMap(scopeName, shareScope) {
+    this.shareScopeMap[scopeName] = shareScope;
+  }
+};
+
+//#endregion
+
+//# sourceMappingURL=disabled.js.map
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/remote/index.js
+
 
 
 
@@ -4886,7 +5295,7 @@ var RemoteHandler = class {
             const results = yield preloadAssets(remoteInfo, host, assets, true, {
               initiator: "preloadRemote",
               id: preloadId
-            });
+            }, preloadConfig.recordPreloadedAssets);
             preloadResults.push({
               remote,
               remoteInfo,
@@ -4942,6 +5351,21 @@ var RemoteHandler = class {
         force: options?.force
       });
     });
+  }
+  initRawContainer(name, url, container) {
+    const {
+      host
+    } = this;
+    const module = new Module$1({
+      host,
+      remoteInfo: getRemoteInfo({
+        name,
+        entry: url
+      })
+    });
+    module.remoteEntryExports = container;
+    host.moduleCache.set(name, module);
+    return module;
   }
   getRemoteModuleAndOptions(options) {
     var _this3 = this;
@@ -5078,6 +5502,19 @@ var RemoteHandler = class {
       } = remote;
       const remoteIndex = host.options.remotes.findIndex(item => item.name === name);
       if (remoteIndex !== -1) host.options.remotes.splice(remoteIndex, 1);
+      const globalSnapshotKey = getInfoWithoutType(CurrentGlobal.__FEDERATION__.moduleInfo, getFMId(remote)).key;
+      delete CurrentGlobal.__FEDERATION__.moduleInfo[globalSnapshotKey];
+      if ("entry" in remote) {
+        host.snapshotHandler.manifestCache.delete(remote.entry);
+        delete Global.__FEDERATION__.__MANIFEST_LOADING__[remote.entry];
+      }
+      const {
+        hostGlobalSnapshot
+      } = getGlobalRemoteInfo(remote, host);
+      if (hostGlobalSnapshot) {
+        const remoteKey = hostGlobalSnapshot && "remotesInfo" in hostGlobalSnapshot && hostGlobalSnapshot.remotesInfo && getInfoWithoutType(hostGlobalSnapshot.remotesInfo, remote.name).key;
+        if (remoteKey) delete hostGlobalSnapshot.remotesInfo[remoteKey];
+      }
       const loadedModule = host.moduleCache.get(remote.name);
       if (loadedModule) {
         const remoteInfo = loadedModule.remoteInfo;
@@ -5085,7 +5522,6 @@ var RemoteHandler = class {
         if (CurrentGlobal[key]) if (Object.getOwnPropertyDescriptor(CurrentGlobal, key)?.configurable) delete CurrentGlobal[key];else CurrentGlobal[key] = void 0;
         const remoteEntryUniqueKey = getRemoteEntryUniqueKey(loadedModule.remoteInfo);
         if (globalLoading[remoteEntryUniqueKey]) delete globalLoading[remoteEntryUniqueKey];
-        host.snapshotHandler.manifestCache.delete(remoteInfo.entry);
         let remoteInsId = remoteInfo.buildVersion ? composeKeyWithSeparator(remoteInfo.name, remoteInfo.buildVersion) : remoteInfo.name;
         const remoteInsIndex = CurrentGlobal.__FEDERATION__.__INSTANCES__.findIndex(ins => {
           if (remoteInfo.buildVersion) return ins.options.id === remoteInsId;else return ins.name === remoteInsId;
@@ -5121,16 +5557,6 @@ var RemoteHandler = class {
           });
           CurrentGlobal.__FEDERATION__.__INSTANCES__.splice(remoteInsIndex, 1);
         }
-        const {
-          hostGlobalSnapshot
-        } = getGlobalRemoteInfo(remote, host);
-        if (hostGlobalSnapshot) {
-          const remoteKey = hostGlobalSnapshot && "remotesInfo" in hostGlobalSnapshot && hostGlobalSnapshot.remotesInfo && getInfoWithoutType(hostGlobalSnapshot.remotesInfo, remote.name).key;
-          if (remoteKey) {
-            delete hostGlobalSnapshot.remotesInfo[remoteKey];
-            if (Boolean(Global.__FEDERATION__.__MANIFEST_LOADING__[remoteKey])) delete Global.__FEDERATION__.__MANIFEST_LOADING__[remoteKey];
-          }
-        }
         host.moduleCache.delete(remote.name);
       }
     } catch (err) {
@@ -5142,7 +5568,8 @@ var RemoteHandler = class {
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/core.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/core.js
+
 
 
 
@@ -5168,6 +5595,8 @@ var RemoteHandler = class {
 
 //#region src/core.ts
 const USE_SNAPSHOT =  true ? !false : 0;
+const USE_REMOTE =  true ? !false : 0;
+const USE_SHARED =  true ? !false : 0;
 var ModuleFederation = class {
   constructor(userOptions) {
     this.hooks = new PluginSystem({
@@ -5176,7 +5605,7 @@ var ModuleFederation = class {
       beforeInitContainer: new AsyncWaterfallHook("beforeInitContainer"),
       initContainer: new AsyncWaterfallHook("initContainer")
     });
-    this.version = "2.5.0";
+    this.version = "2.9.2";
     this.moduleCache = /* @__PURE__ */new Map();
     this.loaderHook = new PluginSystem({
       getModuleInfo: new SyncHook(),
@@ -5197,9 +5626,10 @@ var ModuleFederation = class {
       beforeBridgeRender: new SyncHook(),
       afterBridgeRender: new SyncHook(),
       beforeBridgeDestroy: new SyncHook(),
-      afterBridgeDestroy: new SyncHook()
+      afterBridgeDestroy: new SyncHook(),
+      afterBridgeRouteSync: new SyncHook()
     });
-    const plugins = USE_SNAPSHOT ? [snapshotPlugin(), generatePreloadAssetsPlugin()] : [];
+    const plugins = USE_REMOTE && USE_SNAPSHOT ? [snapshotPlugin(), generatePreloadAssetsPlugin()] : [];
     const defaultOptions = {
       id: getBuilderId(),
       name: userOptions.name,
@@ -5210,9 +5640,9 @@ var ModuleFederation = class {
     };
     this.name = userOptions.name;
     this.options = defaultOptions;
-    this.snapshotHandler = new SnapshotHandler(this);
-    this.sharedHandler = new SharedHandler(this);
-    this.remoteHandler = new RemoteHandler(this);
+    this.snapshotHandler = USE_REMOTE ? new SnapshotHandler(this) : new DisabledSnapshotHandler();
+    this.sharedHandler = USE_SHARED ? new SharedHandler(this) : new DisabledSharedHandler();
+    this.remoteHandler = USE_REMOTE ? new RemoteHandler(this) : new DisabledRemoteHandler();
     this.shareScopeMap = this.sharedHandler.shareScopeMap;
     this.registerPlugins([...defaultOptions.plugins, ...(userOptions.plugins || [])]);
     this.options = this.formatOptions(defaultOptions, userOptions);
@@ -5237,17 +5667,7 @@ var ModuleFederation = class {
     return this.sharedHandler.initializeSharing(shareScopeName, extraOptions);
   }
   initRawContainer(name, url, container) {
-    const remoteInfo = getRemoteInfo({
-      name,
-      entry: url
-    });
-    const module = new Module$1({
-      host: this,
-      remoteInfo
-    });
-    module.remoteEntryExports = container;
-    this.moduleCache.set(name, module);
-    return module;
+    return this.remoteHandler.initRawContainer(name, url, container);
   }
   loadRemote(id, options) {
     var _this2 = this;
@@ -5265,9 +5685,7 @@ var ModuleFederation = class {
     this.sharedHandler.initShareScopeMap(scopeName, shareScope, extraOptions);
   }
   formatOptions(globalOptions, userOptions) {
-    const {
-      allShareInfos: shared
-    } = formatShareConfigs(globalOptions, userOptions);
+    const shared = USE_SHARED ? formatShareConfigs(globalOptions, userOptions).allShareInfos : {};
     const {
       userOptions: userOptionsRes,
       options: globalOptionsRes
@@ -5300,12 +5718,7 @@ var ModuleFederation = class {
     return optionsRes;
   }
   registerPlugins(plugins) {
-    const pluginRes = registerPlugins(plugins, this);
-    this.options.plugins = this.options.plugins.reduce((res, plugin) => {
-      if (!plugin) return res;
-      if (res && !res.find(item => item.name === plugin.name)) res.push(plugin);
-      return res;
-    }, pluginRes || []);
+    this.options.plugins = registerPlugins(plugins, this);
   }
   registerRemotes(remotes, options) {
     return this.remoteHandler.registerRemotes(remotes, options);
@@ -5321,7 +5734,7 @@ var ModuleFederation = class {
 //#endregion
 
 //# sourceMappingURL=core.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/_virtual/_rolldown/runtime.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -5342,7 +5755,7 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/type/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/type/index.js
 
 
 //#region src/type/index.ts
@@ -5351,7 +5764,8 @@ var type_exports = /* @__PURE__ */__exportAll({});
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime-_e6fcf5ed3e6ce49fcbad7ded154af133/node_modules/@module-federation/runtime-core/dist/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime-core@2.9.2/node_modules/@module-federation/runtime-core/dist/index.js
+
 
 
 
@@ -5368,11 +5782,12 @@ var type_exports = /* @__PURE__ */__exportAll({});
 
 //#region src/index.ts
 const helpers = helpers_default;
+const Module =  false ? 0 : Module$1;
 
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime@_80bda8b940bad4fb35074f3c2d41639c/node_modules/@module-federation/runtime/dist/utils.js
+;// ./node_modules/.pnpm/@module-federation+runtime@2.9.2/node_modules/@module-federation/runtime/dist/utils.js
 
 
 //#region src/utils.ts
@@ -5392,7 +5807,7 @@ function getGlobalFederationInstance(name, version) {
 //#endregion
 
 //# sourceMappingURL=utils.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime@_80bda8b940bad4fb35074f3c2d41639c/node_modules/@module-federation/runtime/dist/index.js
+;// ./node_modules/.pnpm/@module-federation+runtime@2.9.2/node_modules/@module-federation/runtime/dist/index.js
 
 
 
@@ -5459,10 +5874,10 @@ setGlobalFederationConstructor(ModuleFederation);
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+runtime@_80bda8b940bad4fb35074f3c2d41639c/node_modules/@module-federation/runtime/dist/bundler.js
+;// ./node_modules/.pnpm/@module-federation+runtime@2.9.2/node_modules/@module-federation/runtime/dist/bundler.js
 
 
-;// ./node_modules/.pnpm/@module-federation+runtime@_80bda8b940bad4fb35074f3c2d41639c/node_modules/@module-federation/runtime/dist/helpers.js
+;// ./node_modules/.pnpm/@module-federation+runtime@2.9.2/node_modules/@module-federation/runtime/dist/helpers.js
 
 
 
@@ -5482,12 +5897,13 @@ const runtimeHelpers = {
 //#endregion
 
 //# sourceMappingURL=helpers.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/init.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/init.js
 
 
 
 
 //#region src/init.ts
+const init_USE_SHARED =  true ? !false : 0;
 function init_init({
   webpackRequire
 }) {
@@ -5499,90 +5915,92 @@ function init_init({
     libraryType
   } = webpackRequire.federation;
   if (!initOptions) throw new Error("initOptions is required!");
-  const treeShakingSharePlugin = function () {
-    return {
-      name: "tree-shake-plugin",
-      beforeInit(args) {
-        const {
-          userOptions,
-          origin,
-          options: registeredOptions
-        } = args;
-        const version = userOptions.version || registeredOptions.version;
-        if (!sharedFallback) return args;
-        const currentShared = userOptions.shared || {};
-        const shared = [];
-        Object.keys(currentShared).forEach(sharedName => {
-          (Array.isArray(currentShared[sharedName]) ? currentShared[sharedName] : [currentShared[sharedName]]).forEach(sharedArg => {
-            shared.push([sharedName, sharedArg]);
-            if ("get" in sharedArg) {
-              sharedArg.treeShaking ||= {};
-              sharedArg.treeShaking.get = sharedArg.get;
-              sharedArg.get = bundlerRuntime.getSharedFallbackGetter({
-                shareKey: sharedName,
-                factory: sharedArg.get,
-                webpackRequire,
-                libraryType,
-                version: sharedArg.version
-              });
-            }
-          });
-        });
-        const hostGlobalSnapshot = runtimeHelpers.global.getGlobalSnapshotInfoByModuleInfo({
-          name: origin.name,
-          version
-        });
-        if (!hostGlobalSnapshot || !("shared" in hostGlobalSnapshot)) return args;
-        Object.keys(registeredOptions.shared || {}).forEach(pkgName => {
-          registeredOptions.shared[pkgName].forEach(sharedArg => {
-            shared.push([pkgName, sharedArg]);
-          });
-        });
-        const patchShared = (pkgName, shared) => {
-          const shareSnapshot = hostGlobalSnapshot.shared.find(item => item.sharedName === pkgName);
-          if (!shareSnapshot) return;
+  if (init_USE_SHARED) {
+    const treeShakingSharePlugin = function () {
+      return {
+        name: "tree-shake-plugin",
+        beforeInit(args) {
           const {
-            treeShaking
-          } = shared;
-          if (!treeShaking) return;
-          const {
-            secondarySharedTreeShakingName,
-            secondarySharedTreeShakingEntry,
-            treeShakingStatus
-          } = shareSnapshot;
-          if (treeShaking.status === treeShakingStatus) return;
-          treeShaking.status = treeShakingStatus;
-          if (secondarySharedTreeShakingEntry && libraryType && secondarySharedTreeShakingName) treeShaking.get = /*#__PURE__*/(0,asyncToGenerator/* default */.A)(function* () {
-            const shareEntry = yield getRemoteEntry({
-              origin,
-              remoteInfo: {
-                name: secondarySharedTreeShakingName,
-                entry: secondarySharedTreeShakingEntry,
-                type: libraryType,
-                entryGlobalName: secondarySharedTreeShakingName,
-                shareScope: "default"
+            userOptions,
+            origin,
+            options: registeredOptions
+          } = args;
+          const version = userOptions.version || registeredOptions.version;
+          if (!sharedFallback) return args;
+          const currentShared = userOptions.shared || {};
+          const shared = [];
+          Object.keys(currentShared).forEach(sharedName => {
+            (Array.isArray(currentShared[sharedName]) ? currentShared[sharedName] : [currentShared[sharedName]]).forEach(sharedArg => {
+              shared.push([sharedName, sharedArg]);
+              if ("get" in sharedArg) {
+                sharedArg.treeShaking ||= {};
+                sharedArg.treeShaking.get = sharedArg.get;
+                sharedArg.get = bundlerRuntime.getSharedFallbackGetter({
+                  shareKey: sharedName,
+                  factory: sharedArg.get,
+                  webpackRequire,
+                  libraryType,
+                  version: sharedArg.version
+                });
               }
             });
-            yield shareEntry.init(origin, __webpack_require__.federation.bundlerRuntime);
-            return shareEntry.get();
           });
-        };
-        shared.forEach(([pkgName, sharedArg]) => {
-          patchShared(pkgName, sharedArg);
-        });
-        return args;
-      }
+          const hostGlobalSnapshot = runtimeHelpers.global.getGlobalSnapshotInfoByModuleInfo({
+            name: origin.name,
+            version
+          });
+          if (!hostGlobalSnapshot || !("shared" in hostGlobalSnapshot)) return args;
+          Object.keys(registeredOptions.shared || {}).forEach(pkgName => {
+            registeredOptions.shared[pkgName].forEach(sharedArg => {
+              shared.push([pkgName, sharedArg]);
+            });
+          });
+          const patchShared = (pkgName, shared) => {
+            const shareSnapshot = hostGlobalSnapshot.shared.find(item => item.sharedName === pkgName);
+            if (!shareSnapshot) return;
+            const {
+              treeShaking
+            } = shared;
+            if (!treeShaking) return;
+            const {
+              secondarySharedTreeShakingName,
+              secondarySharedTreeShakingEntry,
+              treeShakingStatus
+            } = shareSnapshot;
+            if (treeShaking.status === treeShakingStatus) return;
+            treeShaking.status = treeShakingStatus;
+            if (secondarySharedTreeShakingEntry && libraryType && secondarySharedTreeShakingName) treeShaking.get = /*#__PURE__*/(0,asyncToGenerator/* default */.A)(function* () {
+              const shareEntry = yield getRemoteEntry({
+                origin,
+                remoteInfo: {
+                  name: secondarySharedTreeShakingName,
+                  entry: secondarySharedTreeShakingEntry,
+                  type: libraryType,
+                  entryGlobalName: secondarySharedTreeShakingName,
+                  shareScope: "default"
+                }
+              });
+              yield shareEntry.init(origin, __webpack_require__.federation.bundlerRuntime);
+              return shareEntry.get();
+            });
+          };
+          shared.forEach(([pkgName, sharedArg]) => {
+            patchShared(pkgName, sharedArg);
+          });
+          return args;
+        }
+      };
     };
-  };
-  initOptions.plugins ||= [];
-  initOptions.plugins.push(treeShakingSharePlugin());
+    initOptions.plugins ||= [];
+    initOptions.plugins.push(treeShakingSharePlugin());
+  }
   return runtime.init(initOptions);
 }
 
 //#endregion
 
 //# sourceMappingURL=init.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/getSharedFallbackGetter.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/getSharedFallbackGetter.js
 //#region src/getSharedFallbackGetter.ts
 const getSharedFallbackGetter = ({
   shareKey,
@@ -5620,7 +6038,7 @@ const getSharedFallbackGetter = ({
 //#endregion
 
 //# sourceMappingURL=getSharedFallbackGetter.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/index.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/index.js
 
 
 
@@ -5632,36 +6050,38 @@ const getSharedFallbackGetter = ({
 
 
 //#region src/index.ts
+const dist_USE_REMOTE =  true ? !false : 0;
+const dist_USE_SHARED =  true ? !false : 0;
+const bundlerRuntime = {
+  remotes: dist_USE_REMOTE ? remotes : void 0,
+  consumes: dist_USE_SHARED ? consumes : void 0,
+  I: dist_USE_SHARED ? initializeSharing : void 0,
+  S: {},
+  installInitialConsumes: dist_USE_SHARED ? installInitialConsumes : void 0,
+  initContainerEntry: ( true) ? initContainerEntry : 0,
+  init: init_init,
+  getSharedFallbackGetter: dist_USE_SHARED ? getSharedFallbackGetter : void 0
+};
 const federation = {
   runtime: bundler_namespaceObject,
   instance: void 0,
   initOptions: void 0,
-  bundlerRuntime: {
-    remotes: remotes,
-    consumes: consumes,
-    I: initializeSharing,
-    S: {},
-    installInitialConsumes: installInitialConsumes,
-    initContainerEntry: initContainerEntry,
-    init: init_init,
-    getSharedFallbackGetter: getSharedFallbackGetter
-  },
+  bundlerRuntime,
   attachShareScopeMap: attachShareScopeMap,
   bundlerRuntimeOptions: {}
 };
 const instance = federation.instance;
 const initOptions = federation.initOptions;
-const bundlerRuntime = federation.bundlerRuntime;
 const bundlerRuntimeOptions = federation.bundlerRuntimeOptions;
 
 //#endregion
 
 //# sourceMappingURL=index.js.map
-;// ./node_modules/.pnpm/@module-federation+webpack-_0803592df0befc1866f473fd71dbdb15/node_modules/@module-federation/webpack-bundler-runtime/dist/bundler.js
+;// ./node_modules/.pnpm/@module-federation+webpack-bundler-runtime@2.9.2/node_modules/@module-federation/webpack-bundler-runtime/dist/bundler.js
 
 
 
-;// ./node_modules/.federation/entry.da553d962b389bb2e82aa08cf48fc5ea.js
+;// ./node_modules/.federation/entry.b421e6889d4434e3b6aa4f80334e81fe.js
 
 if (!__webpack_require__.federation.runtime || !__webpack_require__.federation.bundlerRuntime) {
   var prevFederation = __webpack_require__.federation;
@@ -5687,12 +6107,12 @@ if (!__webpack_require__.federation.instance) {
 
 /***/ },
 
-/***/ 7393
+/***/ 9755
 (__unused_webpack_module, exports, __webpack_require__) {
 
 var moduleMap = {
 	"./Routes": () => {
-		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(424), __webpack_require__.e(277), __webpack_require__.e(979), __webpack_require__.e(76), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(6866)))));
+		return Promise.all(/* __federation_expose_Routes */[__webpack_require__.e(424), __webpack_require__.e(277), __webpack_require__.e(73), __webpack_require__.e(76), __webpack_require__.e(286)]).then(() => (() => ((__webpack_require__(3597)))));
 	}
 };
 var get = (module, getScope) => {
@@ -5723,7 +6143,7 @@ __webpack_require__.d(exports, {
 
 /***/ },
 
-/***/ 2829
+/***/ 6037
 () {
 
 
@@ -5733,7 +6153,7 @@ __webpack_require__.d(exports, {
 
 /***/ },
 
-/***/ 1988
+/***/ 127
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 /* unused harmony export createModuleFederationConfig */
@@ -5748,7 +6168,7 @@ const createModuleFederationConfig = options => {
 
 /***/ },
 
-/***/ 3135
+/***/ 7154
 () {
 
 
@@ -5770,7 +6190,7 @@ const createModuleFederationConfig = options => {
 
 /***/ },
 
-/***/ 9707
+/***/ 4983
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 /* unused harmony export normalizeOptions */
@@ -5794,13 +6214,13 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 1531
+/***/ 1127
 () {
 
 
 // UNUSED EXPORTS: ContainerPlugin_exports
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -5821,7 +6241,7 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.5._286810ffaabda46052ac972c332d5003/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
 
 
 //#region src/types/plugins/ContainerPlugin.ts
@@ -5914,7 +6334,7 @@ function _asyncToGenerator(n) {
 /******/ 	if(!__webpack_require__.federation){
 /******/ 		__webpack_require__.federation = {
 /******/ 			initOptions: {"name":"mfeDecide","remotes":[],"shareStrategy":"version-first"},
-/******/ 			chunkMatcher: function(chunkId) {return !/^(3(02|70|9)|[24]24|277|840|979|980)$/.test(chunkId)},
+/******/ 			chunkMatcher: function(chunkId) {return !/^([39]98|130|161|277|339|424|73|980)$/.test(chunkId)},
 /******/ 			rootOutputDir: "",
 /******/ 			bundlerRuntimeOptions: { remotes: { remoteInfos: {}, webpackRequire: __webpack_require__,idToRemoteMap: {}, chunkMapping: {},idToExternalAndNameMapping: {} } }
 /******/ 		};
@@ -5965,7 +6385,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"76":"037b8286adc0ea37","160":"6caf99c8be6ebd0f","161":"d86132b24ee6e586","222":"cd5d937bdd8baa5a","231":"6adb82ee99a9f70b","270":"5b08c4ea337d11fc","273":"14974d2431f08c5e","286":"9d72b17c51bc4b11","329":"4d7bc8dd1959c43e","409":"a7417999adc940f0","413":"b8f0e10abed1c3d6","423":"12a9d3b1378d2981","500":"a3ef2859de67d156","501":"6b4af3fab67217d2","749":"7c213098139c7417"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"18":"1808d158470355e8","43":"0b502046f97889ec","44":"9ceb1ad083ed44a3","76":"1ef90b59bd43f5ce","195":"edb0768bfb9e1e0e","198":"aba57c6afc79d83b","286":"62d2f2154491a5df","288":"19225f4b63d1db48","382":"c9684f5364f52578","399":"78078c86c1b7ae5c","405":"8696b596deedf7ab","488":"43297d8447c32b79","493":"84349a3125b252b4","705":"959cd83787373ca5","735":"0340a6fe65c07069"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -6080,19 +6500,19 @@ function _asyncToGenerator(n) {
 /******/ 		var promises = [];
 /******/ 		switch(name) {
 /******/ 			case "default": {
-/******/ 				register("@angular/common/http", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(224), __webpack_require__.e(329)]).then(() => (() => (__webpack_require__(2329))))));
-/******/ 				register("@angular/common", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(224), __webpack_require__.e(273)]).then(() => (() => (__webpack_require__(9273))))));
-/******/ 				register("@angular/core/primitives/di", "21.2.14", () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(161)]).then(() => (() => (__webpack_require__(1628))))));
-/******/ 				register("@angular/core/primitives/signals", "21.2.14", () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(270)]).then(() => (() => (__webpack_require__(7164))))));
-/******/ 				register("@angular/core/rxjs-interop", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(6849))))));
-/******/ 				register("@angular/core", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76), __webpack_require__.e(231)]).then(() => (() => (__webpack_require__(8231))))));
-/******/ 				register("@angular/platform-browser", "21.2.14", () => (Promise.all([__webpack_require__.e(224), __webpack_require__.e(370), __webpack_require__.e(840), __webpack_require__.e(160)]).then(() => (() => (__webpack_require__(8160))))));
-/******/ 				register("@angular/router", "21.2.14", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(224), __webpack_require__.e(840), __webpack_require__.e(302), __webpack_require__.e(501)]).then(() => (() => (__webpack_require__(9501))))));
-/******/ 				register("@yadinstore/sharedCatalog", "0.0.0", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(224), __webpack_require__.e(370), __webpack_require__.e(277), __webpack_require__.e(500)]).then(() => (() => (__webpack_require__(1500))))));
-/******/ 				register("@yadinstore/sharedEvents", "0.0.0", () => (__webpack_require__.e(222).then(() => (() => (__webpack_require__(9222))))));
-/******/ 				register("@yadinstore/tsDesignSystem", "0.0.0", () => (Promise.all([__webpack_require__.e(224), __webpack_require__.e(370), __webpack_require__.e(39), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(2669))))));
-/******/ 				register("rxjs/operators", "7.8.2", () => (Promise.all([__webpack_require__.e(409), __webpack_require__.e(423)]).then(() => (() => (__webpack_require__(7423))))));
-/******/ 				register("rxjs", "7.8.2", () => (Promise.all([__webpack_require__.e(409), __webpack_require__.e(413)]).then(() => (() => (__webpack_require__(4413))))));
+/******/ 				register("@angular/common/http", "21.2.25", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(998), __webpack_require__.e(382)]).then(() => (() => (__webpack_require__(4382))))));
+/******/ 				register("@angular/common", "21.2.25", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(998), __webpack_require__.e(195)]).then(() => (() => (__webpack_require__(5195))))));
+/******/ 				register("@angular/core/primitives/di", "21.2.25", () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(705)]).then(() => (() => (__webpack_require__(212))))));
+/******/ 				register("@angular/core/primitives/signals", "21.2.25", () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(198)]).then(() => (() => (__webpack_require__(2788))))));
+/******/ 				register("@angular/core/rxjs-interop", "21.2.25", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(493), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(7257))))));
+/******/ 				register("@angular/core", "21.2.25", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(493), __webpack_require__.e(76), __webpack_require__.e(18)]).then(() => (() => (__webpack_require__(1018))))));
+/******/ 				register("@angular/platform-browser", "21.2.25", () => (Promise.all([__webpack_require__.e(998), __webpack_require__.e(161), __webpack_require__.e(339), __webpack_require__.e(44)]).then(() => (() => (__webpack_require__(44))))));
+/******/ 				register("@angular/router", "21.2.25", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(998), __webpack_require__.e(339), __webpack_require__.e(130), __webpack_require__.e(405)]).then(() => (() => (__webpack_require__(405))))));
+/******/ 				register("@yadinstore/sharedCatalog", "0.0.0", () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(998), __webpack_require__.e(161), __webpack_require__.e(277), __webpack_require__.e(43)]).then(() => (() => (__webpack_require__(1043))))));
+/******/ 				register("@yadinstore/sharedEvents", "0.0.0", () => (__webpack_require__.e(399).then(() => (() => (__webpack_require__(3399))))));
+/******/ 				register("@yadinstore/tsDesignSystem", "0.0.0", () => (Promise.all([__webpack_require__.e(998), __webpack_require__.e(161), __webpack_require__.e(398), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(298))))));
+/******/ 				register("rxjs/operators", "7.8.2", () => (Promise.all([__webpack_require__.e(735), __webpack_require__.e(288)]).then(() => (() => (__webpack_require__(9288))))));
+/******/ 				register("rxjs", "7.8.2", () => (Promise.all([__webpack_require__.e(735), __webpack_require__.e(488)]).then(() => (() => (__webpack_require__(1488))))));
 /******/ 			}
 /******/ 			break;
 /******/ 		}
@@ -6125,56 +6545,56 @@ function _asyncToGenerator(n) {
 /******/ 
 /******/ /* webpack/runtime/sharing */
 /******/ (() => {
-/******/ 	__webpack_require__.federation.initOptions.shared = {	"@angular/common/http": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(224), __webpack_require__.e(329)]).then(() => (() => (__webpack_require__(2329))))),
+/******/ 	__webpack_require__.federation.initOptions.shared = {	"@angular/common/http": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(998), __webpack_require__.e(382)]).then(() => (() => (__webpack_require__(4382))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/common": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(224), __webpack_require__.e(273)]).then(() => (() => (__webpack_require__(9273))))),
+/******/ 		},],	"@angular/common": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(998), __webpack_require__.e(195)]).then(() => (() => (__webpack_require__(5195))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/core/primitives/di": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(161)]).then(() => (() => (__webpack_require__(1628))))),
+/******/ 		},],	"@angular/core/primitives/di": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(705)]).then(() => (() => (__webpack_require__(212))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/core/primitives/signals": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(270)]).then(() => (() => (__webpack_require__(7164))))),
+/******/ 		},],	"@angular/core/primitives/signals": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(76), __webpack_require__.e(198)]).then(() => (() => (__webpack_require__(2788))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/core/rxjs-interop": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(6849))))),
+/******/ 		},],	"@angular/core/rxjs-interop": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(493), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(7257))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/core": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76), __webpack_require__.e(231)]).then(() => (() => (__webpack_require__(8231))))),
+/******/ 		},],	"@angular/core": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(493), __webpack_require__.e(76), __webpack_require__.e(18)]).then(() => (() => (__webpack_require__(1018))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/platform-browser": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(224), __webpack_require__.e(370), __webpack_require__.e(840), __webpack_require__.e(160)]).then(() => (() => (__webpack_require__(8160))))),
+/******/ 		},],	"@angular/platform-browser": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(998), __webpack_require__.e(161), __webpack_require__.e(339), __webpack_require__.e(44)]).then(() => (() => (__webpack_require__(44))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
-/******/ 		},],	"@angular/router": [{	version: "21.2.14",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(224), __webpack_require__.e(840), __webpack_require__.e(302), __webpack_require__.e(501)]).then(() => (() => (__webpack_require__(9501))))),
+/******/ 		},],	"@angular/router": [{	version: "21.2.25",
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(998), __webpack_require__.e(339), __webpack_require__.e(130), __webpack_require__.e(405)]).then(() => (() => (__webpack_require__(405))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~21.2.0","strictVersion":true,"singleton":true,"layer":null},
 /******/ 		},],	"@yadinstore/sharedCatalog": [{	version: "0.0.0",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(224), __webpack_require__.e(370), __webpack_require__.e(277), __webpack_require__.e(500)]).then(() => (() => (__webpack_require__(1500))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(998), __webpack_require__.e(161), __webpack_require__.e(277), __webpack_require__.e(43)]).then(() => (() => (__webpack_require__(1043))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":false,"singleton":false,"layer":null},
 /******/ 		},],	"@yadinstore/sharedEvents": [{	version: "0.0.0",
-/******/ 			get: () => (__webpack_require__.e(222).then(() => (() => (__webpack_require__(9222))))),
+/******/ 			get: () => (__webpack_require__.e(399).then(() => (() => (__webpack_require__(3399))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":false,"singleton":false,"layer":null},
 /******/ 		},],	"@yadinstore/tsDesignSystem": [{	version: "0.0.0",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(224), __webpack_require__.e(370), __webpack_require__.e(39), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(2669))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(998), __webpack_require__.e(161), __webpack_require__.e(398), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(298))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":false,"singleton":false,"layer":null},
 /******/ 		},],	"rxjs/operators": [{	version: "7.8.2",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(409), __webpack_require__.e(423)]).then(() => (() => (__webpack_require__(7423))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(735), __webpack_require__.e(288)]).then(() => (() => (__webpack_require__(9288))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~7.8.0","strictVersion":true,"singleton":true,"layer":null},
 /******/ 		},],	"rxjs": [{	version: "7.8.2",
-/******/ 			get: () => (Promise.all([__webpack_require__.e(409), __webpack_require__.e(413)]).then(() => (() => (__webpack_require__(4413))))),
+/******/ 			get: () => (Promise.all([__webpack_require__.e(735), __webpack_require__.e(488)]).then(() => (() => (__webpack_require__(1488))))),
 /******/ 			scope: ["default"],
 /******/ 			shareConfig: {"eager":false,"requiredVersion":"~7.8.0","strictVersion":true,"singleton":true,"layer":null},
 /******/ 		},],}
@@ -6207,7 +6627,7 @@ function _asyncToGenerator(n) {
 /******/ 	var installedModules = {};
 /******/ 	__webpack_require__.consumesLoadingData.moduleIdToConsumeDataMapping = {
 /******/ 		5424: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(409), __webpack_require__.e(413)]).then(() => (() => (__webpack_require__(4413))))),
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(735), __webpack_require__.e(488)]).then(() => (() => (__webpack_require__(1488))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~7.8.0",
@@ -6218,7 +6638,7 @@ function _asyncToGenerator(n) {
 /******/ 	
 /******/ 		},
 /******/ 		3277: {
-/******/ 			fallback: () => (__webpack_require__.e(222).then(() => (() => (__webpack_require__(9222))))),
+/******/ 			fallback: () => (__webpack_require__.e(399).then(() => (() => (__webpack_require__(3399))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: false,
 /******/ 			requiredVersion: false,
@@ -6228,8 +6648,8 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@yadinstore/sharedEvents",
 /******/ 	
 /******/ 		},
-/******/ 		6704: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(6849))))),
+/******/ 		3090: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(980), __webpack_require__.e(493), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(7257))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6240,7 +6660,7 @@ function _asyncToGenerator(n) {
 /******/ 	
 /******/ 		},
 /******/ 		5136: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(370), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(2669))))),
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(161), __webpack_require__.e(76)]).then(() => (() => (__webpack_require__(298))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: false,
 /******/ 			requiredVersion: false,
@@ -6250,8 +6670,8 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@yadinstore/tsDesignSystem",
 /******/ 	
 /******/ 		},
-/******/ 		4224: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(749), __webpack_require__.e(76), __webpack_require__.e(231)]).then(() => (() => (__webpack_require__(8231))))),
+/******/ 		5998: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(493), __webpack_require__.e(76), __webpack_require__.e(18)]).then(() => (() => (__webpack_require__(1018))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6261,8 +6681,8 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@angular/core",
 /******/ 	
 /******/ 		},
-/******/ 		5687: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(840), __webpack_require__.e(302), __webpack_require__.e(501)]).then(() => (() => (__webpack_require__(9501))))),
+/******/ 		6482: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(339), __webpack_require__.e(130), __webpack_require__.e(405)]).then(() => (() => (__webpack_require__(405))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6273,7 +6693,7 @@ function _asyncToGenerator(n) {
 /******/ 	
 /******/ 		},
 /******/ 		2721: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(370), __webpack_require__.e(277), __webpack_require__.e(500)]).then(() => (() => (__webpack_require__(1500))))),
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(161), __webpack_require__.e(277), __webpack_require__.e(43)]).then(() => (() => (__webpack_require__(1043))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: false,
 /******/ 			requiredVersion: false,
@@ -6284,7 +6704,7 @@ function _asyncToGenerator(n) {
 /******/ 	
 /******/ 		},
 /******/ 		7980: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(409), __webpack_require__.e(423)]).then(() => (() => (__webpack_require__(7423))))),
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(735), __webpack_require__.e(288)]).then(() => (() => (__webpack_require__(9288))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~7.8.0",
@@ -6294,19 +6714,8 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "rxjs/operators",
 /******/ 	
 /******/ 		},
-/******/ 		1990: {
-/******/ 			fallback: () => (__webpack_require__.e(76).then(() => (() => (__webpack_require__(7164))))),
-/******/ 			shareScope: ["default"],
-/******/ 			singleton: true,
-/******/ 			requiredVersion: "~21.2.0",
-/******/ 			strictVersion: true,
-/******/ 			eager: false,
-/******/ 			layer: undefined,
-/******/ 			shareKey: "@angular/core/primitives/signals",
-/******/ 	
-/******/ 		},
-/******/ 		8900: {
-/******/ 			fallback: () => (__webpack_require__.e(76).then(() => (() => (__webpack_require__(1628))))),
+/******/ 		6442: {
+/******/ 			fallback: () => (__webpack_require__.e(76).then(() => (() => (__webpack_require__(212))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6316,8 +6725,19 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@angular/core/primitives/di",
 /******/ 	
 /******/ 		},
-/******/ 		1370: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(329)]).then(() => (() => (__webpack_require__(2329))))),
+/******/ 		3216: {
+/******/ 			fallback: () => (__webpack_require__.e(76).then(() => (() => (__webpack_require__(2788))))),
+/******/ 			shareScope: ["default"],
+/******/ 			singleton: true,
+/******/ 			requiredVersion: "~21.2.0",
+/******/ 			strictVersion: true,
+/******/ 			eager: false,
+/******/ 			layer: undefined,
+/******/ 			shareKey: "@angular/core/primitives/signals",
+/******/ 	
+/******/ 		},
+/******/ 		2161: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(980), __webpack_require__.e(382)]).then(() => (() => (__webpack_require__(4382))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6327,8 +6747,8 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@angular/common/http",
 /******/ 	
 /******/ 		},
-/******/ 		8840: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(273)]).then(() => (() => (__webpack_require__(9273))))),
+/******/ 		8339: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(424), __webpack_require__.e(195)]).then(() => (() => (__webpack_require__(5195))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6338,8 +6758,8 @@ function _asyncToGenerator(n) {
 /******/ 			shareKey: "@angular/common",
 /******/ 	
 /******/ 		},
-/******/ 		3302: {
-/******/ 			fallback: () => (Promise.all([__webpack_require__.e(370), __webpack_require__.e(840), __webpack_require__.e(160)]).then(() => (() => (__webpack_require__(8160))))),
+/******/ 		1130: {
+/******/ 			fallback: () => (Promise.all([__webpack_require__.e(161), __webpack_require__.e(339), __webpack_require__.e(44)]).then(() => (() => (__webpack_require__(44))))),
 /******/ 			shareScope: ["default"],
 /******/ 			singleton: true,
 /******/ 			requiredVersion: "~21.2.0",
@@ -6353,43 +6773,43 @@ function _asyncToGenerator(n) {
 /******/ 	var moduleToHandlerMapping = {};
 /******/ 	// no consumes in initial chunks
 /******/ 	__webpack_require__.consumesLoadingData.chunkMapping = {
-/******/ 		"39": [
-/******/ 			5687,
-/******/ 			2721
+/******/ 		"73": [
+/******/ 			3090,
+/******/ 			5136
 /******/ 		],
-/******/ 		"224": [
-/******/ 			4224
+/******/ 		"130": [
+/******/ 			1130
+/******/ 		],
+/******/ 		"161": [
+/******/ 			2161
 /******/ 		],
 /******/ 		"277": [
 /******/ 			3277
 /******/ 		],
 /******/ 		"286": [
-/******/ 			4224,
-/******/ 			5687,
+/******/ 			5998,
+/******/ 			6482,
 /******/ 			2721
 /******/ 		],
-/******/ 		"302": [
-/******/ 			3302
+/******/ 		"339": [
+/******/ 			8339
 /******/ 		],
-/******/ 		"370": [
-/******/ 			1370
+/******/ 		"398": [
+/******/ 			6482,
+/******/ 			2721
 /******/ 		],
 /******/ 		"424": [
 /******/ 			5424
 /******/ 		],
-/******/ 		"749": [
-/******/ 			1990,
-/******/ 			8900
-/******/ 		],
-/******/ 		"840": [
-/******/ 			8840
-/******/ 		],
-/******/ 		"979": [
-/******/ 			6704,
-/******/ 			5136
+/******/ 		"493": [
+/******/ 			6442,
+/******/ 			3216
 /******/ 		],
 /******/ 		"980": [
 /******/ 			7980
+/******/ 		],
+/******/ 		"998": [
+/******/ 			5998
 /******/ 		]
 /******/ 	};
 /******/ 	__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -6411,7 +6831,7 @@ function _asyncToGenerator(n) {
 /******/ 	__webpack_require__.x = () => {
 /******/ 		if (!hasRun) {
 /******/ 		  hasRun = true;
-/******/ 		  __webpack_require__(8811);
+/******/ 		  __webpack_require__(1626);
 /******/ 		}
 /******/ 		if (typeof prevStartup === 'function') {
 /******/ 		  return prevStartup();
@@ -6441,7 +6861,7 @@ function _asyncToGenerator(n) {
 /******/ 				if(installedChunkData) {
 /******/ 					promises.push(installedChunkData[2]);
 /******/ 				} else {
-/******/ 					if(!/^(3(02|70|9)|[24]24|277|840|979|980)$/.test(chunkId)) {
+/******/ 					if(!/^([39]98|130|161|277|339|424|73|980)$/.test(chunkId)) {
 /******/ 						// setup Promise in chunk cache
 /******/ 						var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 						promises.push(installedChunkData[2] = promise);
@@ -6517,7 +6937,7 @@ function _asyncToGenerator(n) {
 /******/ // module cache are used so entry inlining is disabled
 /******/ // startup
 /******/ // Load entry module and return exports
-/******/ var __webpack_exports__ = __webpack_require__(7393);
+/******/ var __webpack_exports__ = __webpack_require__(9755);
 /******/ const __webpack_exports__get = __webpack_exports__.get;
 /******/ const __webpack_exports__init = __webpack_exports__.init;
 /******/ export { __webpack_exports__get as get, __webpack_exports__init as init };

@@ -20,7 +20,7 @@
       "api": ""
     },
     "globalName": "mfeDecide",
-    "pluginVersion": "2.5.0",
+    "pluginVersion": "2.9.2",
     "publicPath": "auto"
   },
   "shared": [
@@ -30,14 +30,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/common/http",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/common/http",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "329.4d7bc8dd1959c43e.js"
+            "382.c9684f5364f52578.js"
           ]
         },
         "css": {
@@ -55,14 +55,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/common",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/common",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "273.14974d2431f08c5e.js"
+            "195.edb0768bfb9e1e0e.js"
           ]
         },
         "css": {
@@ -80,14 +80,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/core/primitives/di",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/core/primitives/di",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.037b8286adc0ea37.js"
+            "common.1ef90b59bd43f5ce.js"
           ]
         },
         "css": {
@@ -105,14 +105,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/core/primitives/signals",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/core/primitives/signals",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.037b8286adc0ea37.js"
+            "common.1ef90b59bd43f5ce.js"
           ]
         },
         "css": {
@@ -130,14 +130,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/core/rxjs-interop",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/core/rxjs-interop",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.037b8286adc0ea37.js"
+            "common.1ef90b59bd43f5ce.js"
           ]
         },
         "css": {
@@ -155,14 +155,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/core",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/core",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "231.6adb82ee99a9f70b.js"
+            "18.1808d158470355e8.js"
           ]
         },
         "css": {
@@ -180,14 +180,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/platform-browser",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/platform-browser",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "160.6caf99c8be6ebd0f.js"
+            "44.9ceb1ad083ed44a3.js"
           ]
         },
         "css": {
@@ -205,14 +205,14 @@
       "shareScope": "default",
       "strictVersion": true,
       "name": "@angular/router",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "eager": false,
       "id": "mfeDecide:@angular/router",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "501.6b4af3fab67217d2.js"
+            "405.8696b596deedf7ab.js"
           ]
         },
         "css": {
@@ -236,7 +236,7 @@
         "js": {
           "async": [],
           "sync": [
-            "500.a3ef2859de67d156.js"
+            "43.0b502046f97889ec.js"
           ]
         },
         "css": {
@@ -260,7 +260,7 @@
         "js": {
           "async": [],
           "sync": [
-            "222.cd5d937bdd8baa5a.js"
+            "399.78078c86c1b7ae5c.js"
           ]
         },
         "css": {
@@ -284,7 +284,7 @@
         "js": {
           "async": [],
           "sync": [
-            "common.037b8286adc0ea37.js"
+            "common.1ef90b59bd43f5ce.js"
           ]
         },
         "css": {
@@ -309,7 +309,7 @@
         "js": {
           "async": [],
           "sync": [
-            "423.12a9d3b1378d2981.js"
+            "288.19225f4b63d1db48.js"
           ]
         },
         "css": {
@@ -334,7 +334,7 @@
         "js": {
           "async": [],
           "sync": [
-            "413.b8f0e10abed1c3d6.js"
+            "488.43297d8447c32b79.js"
           ]
         },
         "css": {
@@ -358,11 +358,11 @@
       "assets": {
         "js": {
           "sync": [
-            "__federation_expose_Routes.9d72b17c51bc4b11.js"
+            "__federation_expose_Routes.62d2f2154491a5df.js"
           ],
           "async": [
-            "749.7c213098139c7417.js",
-            "409.a7417999adc940f0.js"
+            "493.84349a3125b252b4.js",
+            "735.0340a6fe65c07069.js"
           ]
         },
         "css": {

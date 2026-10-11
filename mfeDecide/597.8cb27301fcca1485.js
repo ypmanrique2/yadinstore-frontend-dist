@@ -1,0 +1,1 @@
+(self.webpackChunkmfeDecide=self.webpackChunkmfeDecide||[]).push([[597],{3597(_,t,e){e.d(t,{remoteRoutes:()=>p});const p=[{path:"",redirectTo:"CL-01-GR",pathMatch:"full"},{path:":id",component:e(7676).u}]}}]);

@@ -38,6 +38,7 @@
   Angular, arquitectura hexagonal / DDD / EDA, JWT, Docker/K8s, Jenkins,
   Micrometer/Prometheus/Grafana, facturación electrónica DIAN (Colombia),
    SEO Core (AI First, human-in-the-loop, SEO organic).
+- GraphQL read-only (Spring for GraphQL, 2 queries catálogo, tenant server-side, introspección off en prod).
 - Nota honesta: la emisión DIAN real está en estado CONTINGENCY/stub hasta
   completar el trámite externo (certificado, resolución, testSetId); solo el
   CUFE va al log, jamás XML ni secretos.

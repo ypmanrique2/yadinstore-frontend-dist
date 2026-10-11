@@ -20,21 +20,21 @@
       "api": ""
     },
     "globalName": "shell",
-    "pluginVersion": "2.5.0",
+    "pluginVersion": "2.9.2",
     "publicPath": "auto"
   },
   "shared": [
     {
       "id": "shell:@angular/common/http",
       "name": "@angular/common/http",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "329.39e8c048232d6758.js"
+            "382.8a543adf2dd1f020.js"
           ]
         },
         "css": {
@@ -47,14 +47,14 @@
     {
       "id": "shell:@angular/common",
       "name": "@angular/common",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "273.6617e18cfd6c3ff9.js"
+            "195.1c8d57a407b039fb.js"
           ]
         },
         "css": {
@@ -67,14 +67,14 @@
     {
       "id": "shell:@angular/core/primitives/di",
       "name": "@angular/core/primitives/di",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.5ee7610879f94089.js"
+            "common.dd0c1e612825e8cd.js"
           ]
         },
         "css": {
@@ -87,14 +87,14 @@
     {
       "id": "shell:@angular/core/primitives/signals",
       "name": "@angular/core/primitives/signals",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.5ee7610879f94089.js"
+            "common.dd0c1e612825e8cd.js"
           ]
         },
         "css": {
@@ -107,14 +107,14 @@
     {
       "id": "shell:@angular/core",
       "name": "@angular/core",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "515.2e9b55c01e2b69aa.js"
+            "92.7d0ae5deac011c39.js"
           ]
         },
         "css": {
@@ -127,14 +127,14 @@
     {
       "id": "shell:@angular/forms",
       "name": "@angular/forms",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "725.fa00383e76e1c0f3.js"
+            "131.baca41d05a19a7be.js"
           ]
         },
         "css": {
@@ -147,14 +147,14 @@
     {
       "id": "shell:@angular/platform-browser",
       "name": "@angular/platform-browser",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "160.1d53352ea354b39e.js"
+            "44.25429359ea100f70.js"
           ]
         },
         "css": {
@@ -167,14 +167,14 @@
     {
       "id": "shell:@angular/router",
       "name": "@angular/router",
-      "version": "21.2.14",
+      "version": "21.2.25",
       "singleton": true,
       "requiredVersion": "~21.2.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "501.8b3ffb9a205a316d.js"
+            "405.1ab79c43f793bc39.js"
           ]
         },
         "css": {
@@ -194,7 +194,7 @@
         "js": {
           "async": [],
           "sync": [
-            "500.dd19861794db9744.js"
+            "43.8ad205facb8e0553.js"
           ]
         },
         "css": {
@@ -214,7 +214,7 @@
         "js": {
           "async": [],
           "sync": [
-            "222.47ff53dd55d84832.js"
+            "399.04aeb11ad5c4be31.js"
           ]
         },
         "css": {
@@ -234,7 +234,7 @@
         "js": {
           "async": [],
           "sync": [
-            "555.8fa57b70e0ca97d7.js"
+            "24.6bade6e8f19b05bc.js"
           ]
         },
         "css": {
@@ -254,7 +254,7 @@
         "js": {
           "async": [],
           "sync": [
-            "423.c47785f89817c7c8.js"
+            "288.20b5b190339bd97b.js"
           ]
         },
         "css": {
@@ -274,7 +274,7 @@
         "js": {
           "async": [],
           "sync": [
-            "413.b3c9f349755826b7.js"
+            "488.d7d82d1c1e31e85c.js"
           ]
         },
         "css": {
@@ -294,7 +294,7 @@
         "js": {
           "async": [],
           "sync": [
-            "15.64fd58d280593d96.js"
+            "956.985ecb43cb7fd4da.js"
           ]
         },
         "css": {
