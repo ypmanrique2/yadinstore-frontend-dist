@@ -6214,11 +6214,11 @@ function normalizeOptions(enableDefault, defaultOptions, key) {
 
 /***/ },
 
-/***/ 386
+/***/ 1127
 () {
 
 
-// UNUSED EXPORTS: ContainerReferencePlugin_exports
+// UNUSED EXPORTS: ContainerPlugin_exports
 
 ;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/_virtual/_rolldown/runtime.js
 //#region \0rolldown/runtime.js
@@ -6241,15 +6241,15 @@ var __exportAll = (all, no_symbols) => {
 
 //#endregion
 
-;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/types/plugins/ContainerReferencePlugin.js
+;// ./node_modules/.pnpm/@module-federation+sdk@2.9.2/node_modules/@module-federation/sdk/dist/types/plugins/ContainerPlugin.js
 
 
-//#region src/types/plugins/ContainerReferencePlugin.ts
-var ContainerReferencePlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
+//#region src/types/plugins/ContainerPlugin.ts
+var ContainerPlugin_exports = /* @__PURE__ *//* unused export */ undefined({});
 
 //#endregion
 
-//# sourceMappingURL=ContainerReferencePlugin.js.map
+//# sourceMappingURL=ContainerPlugin.js.map
 
 /***/ },
 
@@ -6385,7 +6385,7 @@ function _asyncToGenerator(n) {
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"18":"f15f5eb8c606764e","43":"1d14b2959311f286","44":"4bf55c9a9684f0b0","76":"5bec454a412b8ed9","131":"16da7b038f9c7c31","195":"2bcd9efbd9e48563","198":"a4bbbedc0cf9748f","286":"62d92b63c8d1fd8b","288":"78f58df1cd552475","382":"5fa17e816be96947","399":"e6e9ed63389f0704","405":"823d938ffba9859c","457":"65eff122fb14a807","488":"f7962aa83e8a7912","493":"ee6c9c7a1a94707e","705":"46fd74e9ab5c8ab3","735":"98c35d3e8b6abcee"}[chunkId] + ".js";
+/******/ 		return "" + ({"76":"common","286":"__federation_expose_Routes"}[chunkId] || chunkId) + "." + {"18":"f15f5eb8c606764e","43":"1d14b2959311f286","44":"4bf55c9a9684f0b0","76":"5bec454a412b8ed9","131":"16da7b038f9c7c31","195":"2bcd9efbd9e48563","198":"a4bbbedc0cf9748f","286":"62d92b63c8d1fd8b","288":"78f58df1cd552475","382":"5fa17e816be96947","399":"e6e9ed63389f0704","405":"823d938ffba9859c","457":"de16eec62e036a39","488":"f7962aa83e8a7912","493":"ee6c9c7a1a94707e","705":"46fd74e9ab5c8ab3","735":"98c35d3e8b6abcee"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
